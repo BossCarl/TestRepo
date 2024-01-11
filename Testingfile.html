@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create and Edit Divs</title>
+  <style>
+    .container {
+      display: none;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="showDivButton">Show Div</button>
+
+  <div id="dynamicDivContainer"></div>
+
+  <script>
+    document.getElementById('showDivButton').addEventListener('click', function() {
+      showDiv('dynamicDivContainer');
+    });
+
+    function showDiv(containerId) {
+      var container = document.getElementById(containerId);
+
+      // Create a new div
+      var newDiv = document.createElement('div');
+      newDiv.className = 'container';
+      newDiv.textContent = 'This is a new div';
+
+      // Create an edit button for the new div
+      var editButton = document.createElement('button');
+      editButton.textContent = 'Edit';
+      editButton.addEventListener('click', function() {
+        editDiv(newDiv);
+      });
+
+      // Append the new div and edit button to the container
+      container.appendChild(newDiv);
+      container.appendChild(editButton);
+    }
+
+    function editDiv(div) {
+      // Allow the user to edit the content of the div
+      div.contentEditable = true;
+      div.style.border = '2px solid #007BFF';
+    }
+  </script>
+
+</body>
+</html>
