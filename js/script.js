@@ -15,13 +15,27 @@ function showQuiz() {
 }
 
 function hideAllTopics() {
-  for (let i = 0; i <= 2; i++) { // Assuming you have three topics (adjust as needed)
-    document.getElementById('topic' + i).classList.add('hidden');
+  for (let i = 0; i <= 2; i++) {
+    let topicElement = document.getElementById('topic' + i);
+    if (topicElement) {
+      topicElement.classList.add('hidden');
+    }
   }
-  document.getElementById('iframe').classList.add('hidden');
+
+  let iframeElement = document.getElementById('iframe');
+  if (iframeElement) {
+    iframeElement.classList.add('hidden');
+  }
 }
+
 
 // Initial hide all topics on page load
 document.addEventListener('DOMContentLoaded', function () {
   hideAllTopics();
 });
+
+function showCongratulationsMessage() {
+  // Open the Bootstrap modal
+  var myModal = new bootstrap.Modal(document.getElementById('congratulationsModal'));
+  myModal.show();
+}
