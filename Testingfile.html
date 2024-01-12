@@ -3,53 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create and Edit Divs</title>
+  <title>Div Navigation</title>
   <style>
-    .container {
+    .hidden {
       display: none;
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
 
-  <button id="showDivButton">Show Div</button>
+<main>
 
-  <div id="dynamicDivContainer"></div>
+  <div id="div1">
+    <h2>Div 1 - Content</h2>
+    <p>This is the content of the first div.</p>
+  </div>
 
-  <script>
-    document.getElementById('showDivButton').addEventListener('click', function() {
-      showDiv('dynamicDivContainer');
-    });
+  <div id="div2" class="hidden">
+    <h2>Div 2 - Content</h2>
+    <p>This is the content of the second div.</p>
+  </div>
 
-    function showDiv(containerId) {
-      var container = document.getElementById(containerId);
+  <div id="div3" class="hidden">
+    <h2>Div 3 - Content</h2>
+    <p>This is the content of the third div.</p>
+  </div>
 
-      // Create a new div
-      var newDiv = document.createElement('div');
-      newDiv.className = 'container';
-      newDiv.textContent = 'This is a new div';
+  <div id="div4" class="hidden">
+    <h2>Div 4 - Content</h2>
+    <p>This is the content of the fourth div.</p>
+  </div>
 
-      // Create an edit button for the new div
-      var editButton = document.createElement('button');
-      editButton.textContent = 'Edit';
-      editButton.addEventListener('click', function() {
-        editDiv(newDiv);
-      });
+  <button onclick="showNextDiv()">Next</button>
+  <button onclick="showPrevDiv()">Back</button>
 
-      // Append the new div and edit button to the container
-      container.appendChild(newDiv);
-      container.appendChild(editButton);
+</main>
+
+<script>
+  var currentDiv = 1;
+
+  function showNextDiv() {
+    if (currentDiv < 4) {
+      document.getElementById('div' + currentDiv).classList.add('hidden');
+      currentDiv++;
+      document.getElementById('div' + currentDiv).classList.remove('hidden');
     }
+  }
 
-    function editDiv(div) {
-      // Allow the user to edit the content of the div
-      div.contentEditable = true;
-      div.style.border = '2px solid #007BFF';
+  function showPrevDiv() {
+    if (currentDiv > 1) {
+      document.getElementById('div' + currentDiv).classList.add('hidden');
+      currentDiv--;
+      document.getElementById('div' + currentDiv).classList.remove('hidden');
     }
-  </script>
+  }
+</script>
 
 </body>
 </html>

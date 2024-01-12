@@ -4,81 +4,106 @@
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="css/base_style.css">
 
   <title>Clickable List Group</title>
 </head>
 <body>
 
-  <!-- Fixed-top Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #D9FFCF;">
-    <div class="container-fluid">
-      <img class="logo me-1" src="pics/logo.png" alt="tsukiden-logo" style="width: 200px; height: 5vh;">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="homepage.html">Dashboard</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fw-bold text-success" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              My Courses
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item text-success" href="course.html">Program Overview</a></li>
-              <li><a class="dropdown-item" href="assessment.html">Assessments</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="forum.html">Forum</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <button class="btn" style="border-color: #0e3b03;"type="submit">LOGOUT</button>
-        </form>
-      </div>
+  <!-- Start of Main Navbar -->
+  <div class="main-container">
+            
+    <nav class="navbar navbar-expand-lg  navbar-light" style="z-index: 2; background-color: #D9FFCF;">
+     <div class="container-fluid">
+         <img class="logo me-1 img-fluid" src="pics/logo.png" alt="tsukiden-logo" style="width: 150px;">
+
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link text-success fw-bold" aria-current="page" href="homepage.html">Dashboard</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               My Courses
+             </a>
+             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <li><a class="dropdown-item" href="course.html">Program Overview</a></li>
+               <li><a class="dropdown-item" href="assessment.html">Assessments</a></li>
+             </ul>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="sAMPLE.HTML">Forum</a>
+           </li>
+         </ul>
+         <form class="d-flex">
+           <button class="btn" style="border-color: #0e3b03;"type="submit">LOGOUT</button>
+         </form>
+       </div>
+     </div>
+   </nav>
+ </div>
+ <!-- End of Main Navbar -->
+
+ <!-- Start of Sidebar -->
+<nav id="sidebarMenu" class="d-lg-block sidebar">
+  <div class="container-fluid">
+    <div class="list-group list-group-flush mx-3 mt-4">
+      <a class="list-group-item list-group-item-action py-2 ripple h4 fw-bold text-s d-flex align-items-center justify-content-end" aria-current="true" style="background-color:#D9FFCF; color: #0e3b03; white-space: normal;">
+        <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>The Subversion</span>
+    </a>
+
+      <a href ="#" onclick="showNextTopic(0)" class="list-group-item list-group-item-action" style="font-size:18px; color:#0e3b03; background-color: #D9FFCF; text-align: right; overflow: visible;">
+        <i class="fas fa-chart-area fa-fw me-3"></i><span>TOPIC #1</span>
+      </a>
+
+      <a href="#" onclick="showNextTopic(1)" class="list-group-item list-group-item-action" style="font-size:18px; color:#0e3b03; background-color: #D9FFCF; text-align: right; overflow: visible;">
+        <i class="fas fa-lock fa-fw me-3"></i><span>TOPIC #2</span>
+      </a>
+
+      <a href="#" onclick="showNextTopic(2)" class="list-group-item list-group-item-action" style="font-size:18px; color:#0e3b03; background-color: #D9FFCF; text-align: right; overflow: visible;">
+        <i class="fas fa-lock fa-fw me-3"></i><span>TOPIC #3</span>
+      </a>
+
+      <a href="#" onclick="showQuiz()" class="list-group-item list-group-item-action" style="font-size:18px; color:#0e3b03; background-color: #D9FFCF; text-align: right; overflow: visible;">
+        <i class="fas fa-lock fa-fw me-3"></i><span>QUIZ</span>
+      </a>
     </div>
-  </nav>
-
-  <!-- Sidebar -->
-  <nav id="sidebarMenu" class="d-lg-block sidebar" style="background-color: #D9FFCF; width: 250px;">
-    <div class="container-fluid">
-      <div class="list-group list-group-flush mx-3 mt-4">
-        <button class="list-group-item list-group-item-action py-2 ripple h4 fw-bold text-s d-flex align-items-center" aria-current="true" style="text-align:right; background-color:#D9FFCF; color: #0e3b03; white-space: normal;">
-          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>C Language Programming</span>
-        </button>
-        
-        <a href="forum.html" id="topic1" class="list-group-item list-group-item-action" style="font-size:18px; color:#0e3b03; background-color: #D9FFCF; text-align: right;">
-          <i class="fas fa-chart-area fa-fw me-3"></i><span>TOPIC #1</span>
-        </a>
-
-        <a href="#" id="topic2" class="list-group-item list-group-item-action" style="font-size:18px; color:#0e3b03; background-color: #D9FFCF; text-align: right;">
-          <i class="fas fa-lock fa-fw me-3"></i><span>TOPIC #2</span>
-        </a>
-
-        <a href="#" id="topic3" class="list-group-item list-group-item-action" style="font-size:18px; color:#0e3b03; background-color: #D9FFCF; text-align: right;">
-          <i class="fas fa-lock fa-fw me-3"></i><span>TOPIC #3</span>
-        </a>
-      </div>
-    </div>
-  </nav>
+  </div>
+</nav>
+  <!-- End of Sidebar -->
 
   <!-- Main layout -->
   <main>
-    <div class="googleform pt-4 d-flex align-items-center justify-content-center">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSepse9R9HdZzZLmzurOuKSsSYUI6nQTZI6a2d_qP5evYAGrmQ/viewform?embedded=true" 
-        width="640" height="850" scrolling="no"
-        frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <!-- Start of Topic Container -->
+    <div id="topic0" class="hidden">
+      TOPIC 0
     </div>
-
-    <div class="div pt-4 d-flex align-items-center justify-content-center">
+    <div id="topic1" class="hidden">
+      TOPIC 1
     </div>
-
-    <p> <!-- DATABASE ITEMS --> </p>   
+    <div id="topic2" class="hidden">
+      TOPIC 2
+    </div>
+    
+    <div id="iframe" class="hidden">
+      <div class="googleform pt-4 d-flex align-items-center justify-content-center">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSepse9R9HdZzZLmzurOuKSsSYUI6nQTZI6a2d_qP5evYAGrmQ/viewform?embedded=true" 
+          width="640" height="850" scrolling="no"
+          frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
   </main>
+  <!-- End of Topic Container -->
+  <!-- End of Main Layout -->
+
+  <!-- Start of JS for Main Layout -->
+  <script src="js/script.js"></script>
+  <!-- End of JS for Main Layout -->
 
   <!-- Bootstrap 5 JS (optional, if you want to use Bootstrap JS features) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rbs5yiS7WH2z1NvA11MHPObDZprHS9s/uqJzGBuAgqO2w+tgj1Pi6L+Su6C2Kq2Y" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
