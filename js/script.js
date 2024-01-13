@@ -39,3 +39,11 @@ function showCongratulationsMessage() {
   var myModal = new bootstrap.Modal(document.getElementById('congratulationsModal'));
   myModal.show();
 }
+
+function enroll(modalNumber) {
+  // Disable the button
+  document.getElementById(`enrollButton${modalNumber}`).disabled = true;
+
+  // Change the text of the button
+  document.getElementById(`enrollButton${modalNumber}`).innerText = `You are now enrolled.`;
+}

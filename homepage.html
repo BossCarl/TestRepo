@@ -9,8 +9,8 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Dashboard</title>
         <!-- Mobile Integration -->
-        <meta charset="uf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     </head>
     <body>
@@ -73,30 +73,11 @@
 
             <!-- Courses -->
             <div class="course-preview-ctn">
-                <!-- C Language Programming -->
-                <div class="card-container">
-                    <div class="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
-                        <div class="card-header bg-transparent border-success"></br></div>
-                        <div class="card-body text-success" style="height:150px;">
-                            <h3 class="card-title fw-bold">C Language Programming</h3>
-                        </div>
-                        <div class="card-footer bg-transparent border-success">
-                            <p class="card-text mt-4">
-                                
-C is a highly efficient and widely-used procedural programming language with a simple syntax, renowned for its low-level capabilities and applicability in system programming and application development.</p>
-                            <!-- Button trigger modal -->
-                            <div class="d-flex justify-content-center">
-                                <button type="button" style="display: flex; align-items: center; justify-content: center; height: 30px;" class="btn btn-success" id="enrollButton" data-bs-toggle="modal" data-bs-target="#clangModal">
-                                    Enroll now!
-                                </button></div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Version Control: SVN -->
                 <div class="card-container">
                     <div class="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
-                        <div class="card-header bg-transparent border-success"></br></div>
+                        <div class="card-header bg-transparent border-success"></br>
+                        </div>
                         <div class="card-body text-success" style="height:150px;">
                             <h3 class="card-title fw-bold">Version Control: SVN</h3>
                         </div>
@@ -105,17 +86,40 @@ C is a highly efficient and widely-used procedural programming language with a s
                                 Apache Subversion (SVN) is a centralized version control system, facilitating collaborative software development through version tracking, allowing multiple developers to work on projects concurrently.</p>
                             <!-- Button trigger modal -->
                             <div class="d-flex justify-content-center">
-                                <button type="button" style="display: flex; align-items: center; justify-content: center; height: 30px;" class="btn btn-success" id="enrollButton" data-bs-toggle="modal" data-bs-target="#svnModal">
-                                    Enroll now!
-                                </button></div>
+                                <button type="button" style="display: flex; align-items: center; justify-content: center; height: 30px;" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal1" id="enrollButton1">
+                                    Enroll Now!
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Version Control: SVN -->
+                <div class="card-container">
+                    <div class="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
+                        <div class="card-header bg-transparent border-success"></br>
+                        </div>
+                        <div class="card-body text-success" style="height:150px;">
+                            <h3 class="card-title fw-bold">Version Control: SVN</h3>
+                        </div>
+                        <div class="card-footer bg-transparent border-success">
+                            <p class="card-text mt-4 ">
+                                Apache Subversion (SVN) is a centralized version control system, facilitating collaborative software development through version tracking, allowing multiple developers to work on projects concurrently.</p>
+                            <!-- Button trigger modal -->
+                            <div class="d-flex justify-content-center">
+                                <button type="button" style="display: flex; align-items: center; justify-content: center; height: 30px;" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal2" id="enrollButton2">
+                                    Enroll Now!
+                                </button>
                         </div>
                     </div>
+                </div>
                 </div>
 
                 <!-- HTML Programming -->
                 <div class="card-container">
                     <div class="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
-                        <div class="card-header bg-transparent border-success"></br></div>
+                        <div class="card-header bg-transparent border-success"></br>
+                        </div>
                         <div class="card-body text-success" style="height:150px;">
                             <h3 class="card-title fw-bold">HTML Programming</h3>
                         </div>
@@ -124,72 +128,77 @@ C is a highly efficient and widely-used procedural programming language with a s
                                 HTML (Hypertext Markup Language) is the standard language for creating web pages, defining the structure and content using tags, ensuring compatibility and accessibility across various browsers.</p>
                             <!-- Button trigger modal -->
                             <div class="d-flex justify-content-center">
-                                <button type="button" style="display: flex; align-items: center; justify-content: center; height: 30px;" class="btn btn-success" id="enrollButton" data-bs-toggle="modal" data-bs-target="#htmlModal">
-                                    Enroll now!
-                                </button>
-                                
+                            <button type="button" style="display: flex; align-items: center; justify-content: center; height: 30px;" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal3" id="enrollButton3">
+                                Enroll Now!
+                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Start of Enrollment Modals -->
-<div class="modal fade" id="svnModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <!-- Modal body content goes here -->
-                <p>This is the body of the modal.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="enroll()">Save changes</button>
-            </div>
-        </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="htmlModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Modal body content goes here -->
-                <p>This is the body of the modal.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="enroll()">Save changes</button>
-            </div>
-        </div>
-    </div>
-  </div>
-  
-  <div class="modal fade" id="clangModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Modal body content goes here -->
-                <p>This is the body of the modal.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="enroll()">Save changes</button>
-            </div>
-        </div>
-    </div>
-  </div>
 
+<!-- Modal 1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #D9FFCF;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">C Language Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal body content goes here -->
+                <p>You will be enrolled to this course.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn" style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;" data-bs-dismiss="modal" onclick="enroll(1)">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #D9FFCF;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">The Subversion Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal body content goes here -->
+                <p>You will be enrolled to this course.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn" style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;" data-bs-dismiss="modal" onclick="enroll(2)">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #D9FFCF;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel3">HTML Pogramming Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal body content goes here -->
+                <p>You will be enrolled to this course. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn" style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;" data-bs-dismiss="modal" onclick="enroll(3)">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <script src="js/script.js"></script>
         <!-- Bootstrap with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>

@@ -93,6 +93,3 @@ main {
   text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
 }
 
-.modal-content   {
-  background-color: #D9FFCF;
-}
