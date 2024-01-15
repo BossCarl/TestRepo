@@ -1,0 +1,88 @@
+body {
+    background-color: #EBFFE5;
+    margin: 0;
+}
+
+.menubar-ctn {
+    background-color: #D9FFCF;
+}
+
+.logo {
+    width: 75px;
+    height: 25px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #1E6C0B;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu.show {
+    opacity: 1;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.gear-icon {
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: #0e3b03;
+}
+
+.gear-icon:hover {
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: #0e3b03;
+}
+
+.alert-icon {
+    font-size: 1.5rem;
+    color: #0e3b03;
+}
+
+.header {
+    background-color: #BCE8B1;
+}
+
+.jap-char, .eng-char, .course-prev {
+    color: #0e3b03;
+}
+
+.btn-view-course {
+    background-color: #0e3b03;
+}
+
+.btn-view-course:hover {
+    background-color: #145304;
+}
+
+.course-preview-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left; 
+    flex-wrap: wrap;
+}
+
+.card-container {
+    margin: 10px;
+}
+
+.see-more {
+    text-decoration: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #D9FFCF;
+}
