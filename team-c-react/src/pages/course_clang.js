@@ -1,14 +1,16 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
-import Navbar from "../components/navbar";
 import '../css/sidebar.css';
-import { showNextTopic, showCongratulationsMessage } from "../js/script";
+import { showNextTopic } from "../js/script";
 
 function Course_clang() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
   return (
     <Fragment>
       {/* Start of Sidebar */}
@@ -36,9 +38,10 @@ function Course_clang() {
               <i className="fas fa-lock fa-fw me-3"></i><span>TOPIC #3</span>
             </Link>
 
-            <Link to="#" onClick={() => showCongratulationsMessage()} className="list-group-item list-group-item-action" style={{ fontSize: '18px', color: '#0e3b03', backgroundColor: '#D9FFCF', textAlign: 'right', overflow: 'visible' }}>
-              <i className="fas fa-lock fa-fw me-3"></i><span>Take A Quiz!</span>
-            </Link>
+            {/* React-Bootstrap Modal Trigger Button */}
+            <Button variant="primary" onClick={handleShowModal}>
+              Take A Quiz!
+            </Button>
           </div>
         </div>
       </nav>
@@ -59,13 +62,28 @@ function Course_clang() {
       {/* End of Topic Container */}
       {/* End of Main Layout */}
 
-      {/* Start of Quiz Popup */}
-      <div className="modal fade" id="congratulationsModal" tabIndex="-1" aria-labelledby="congratulationsModalLabel" aria-hidden="true">
-        {/* ... your existing code ... */}
-      </div>
-      {/* End of Quiz Popup*/}
+      {/* React-Bootstrap Modal */}
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Take A Quiz!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {/* Add quiz content here */}
+          <p>This is the quiz content.</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Close
+          </Button>
+          {/* You can handle quiz submission logic here */}
+          <Button variant="primary" onClick={() => console.log('Quiz submitted')}>
+            Take Quiz
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
       {/* Start of JS for Main Layout */}
-      <script src="js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-+qU78ihVd8FhDInHkhNOl3p5nhtvZq+YP1Jv60hyVgvt/aGzfODJzL2mHTi/xIsN" crossorigin="anonymous"></script>
       {/* End of JS for Main Layout */}
     </Fragment>
   );
