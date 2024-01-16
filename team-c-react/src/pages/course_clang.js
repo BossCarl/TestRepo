@@ -1,15 +1,13 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/sidebar.css';
-import { showNextTopic } from "../js/script";
+import { useModal, showNextTopic, quizValidation } from "../js/script";
 
 function Course_clang() {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleShowModal = () => setShowModal(true);
-  const handleCloseModal = () => setShowModal(false);
+  // Destructure the useModal functions
+  const { handleShowModal, handleCloseModal } = useModal();
 
   return (
     <Fragment>
@@ -38,9 +36,9 @@ function Course_clang() {
               <i className="fas fa-lock fa-fw me-3"></i><span>TOPIC #3</span>
             </Link>
 
-            {/* React-Bootstrap Modal Trigger Button */}
-            <Button variant="primary" onClick={handleShowModal}>
-              Take A Quiz!
+             {/* React-Bootstrap Modal Trigger Button */}
+            <Button variant="primary" onClick={() => { quizValidation(); }}>
+              Take A Quiz!  
             </Button>
           </div>
         </div>
@@ -63,7 +61,7 @@ function Course_clang() {
       {/* End of Main Layout */}
 
       {/* React-Bootstrap Modal */}
-      <Modal show={showModal} onHide={handleCloseModal}>
+      <Modal show={false} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>Take A Quiz!</Modal.Title>
         </Modal.Header>

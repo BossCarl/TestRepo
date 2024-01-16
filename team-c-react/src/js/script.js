@@ -1,6 +1,9 @@
+// Import statements
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as bootstrap from 'bootstrap';
+import React, { useState } from 'react';
 
+// Function to show the next topic
 function showNextTopic(topicNumber) {
   // Hide all topics and the iframe
   hideAllTopics();
@@ -12,6 +15,7 @@ function showNextTopic(topicNumber) {
   }
 }
 
+// Function to show the quiz
 function showQuiz() {
   // Hide all topics
   hideAllTopics();
@@ -23,6 +27,7 @@ function showQuiz() {
   }
 }
 
+// Function to hide all topics
 function hideAllTopics() {
   for (let i = 0; i <= 2; i++) {
     let topicElement = document.getElementById('topic' + i);
@@ -37,20 +42,44 @@ function hideAllTopics() {
   }
 }
 
+// Function to show congratulations message using Bootstrap modal
 function showCongratulationsMessage() {
-  // Open the Bootstrap modal
   var myModal = new bootstrap.Modal(document.getElementById('congratulationsModal'));
   myModal.show();
 }
 
+// Function to enroll and disable the button
 function enroll(modalNumber) {
-  // Disable the button
   let enrollButton = document.getElementById(`enrollButton${modalNumber}`);
   if (enrollButton) {
     enrollButton.disabled = true;
-    // Change the text of the button
     enrollButton.innerText = `You are now enrolled.`;
   }
 }
 
-export { showNextTopic, showQuiz, hideAllTopics, showCongratulationsMessage, enroll };
+// Function to redirect to Google
+function redirectToGoogle() {
+  window.location.href = 'https://www.google.com';
+}
+
+// Function for quiz validation
+function quizValidation() {
+  const { handleShowModal, handleCloseModal } = useModal();
+
+  // Example: Redirect to Google after showing modal
+  handleShowModal();
+  redirectToGoogle();
+}
+
+// Custom hook for modal
+function useModal() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
+  return { handleShowModal, handleCloseModal };
+}
+
+// Exporting all functions and hooks
+export { showNextTopic, showQuiz, hideAllTopics, showCongratulationsMessage, enroll, quizValidation, redirectToGoogle, useModal };
