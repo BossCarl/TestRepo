@@ -6,7 +6,10 @@ function showNextTopic(topicNumber) {
   hideAllTopics();
 
   // Show the selected topic
-  document.getElementById('topic' + topicNumber).classList.remove('hidden');
+  let topicElement = document.getElementById('topic' + topicNumber);
+  if (topicElement) {
+    topicElement.classList.remove('hidden');
+  }
 }
 
 function showQuiz() {
@@ -14,7 +17,10 @@ function showQuiz() {
   hideAllTopics();
 
   // Show the quiz iframe
-  document.getElementById('iframe').classList.remove('hidden');
+  let iframeElement = document.getElementById('iframe');
+  if (iframeElement) {
+    iframeElement.classList.remove('hidden');
+  }
 }
 
 function hideAllTopics() {
@@ -39,10 +45,12 @@ function showCongratulationsMessage() {
 
 function enroll(modalNumber) {
   // Disable the button
-  document.getElementById(`enrollButton${modalNumber}`).disabled = true;
-
-  // Change the text of the button
-  document.getElementById(`enrollButton${modalNumber}`).innerText = `You are now enrolled.`;
+  let enrollButton = document.getElementById(`enrollButton${modalNumber}`);
+  if (enrollButton) {
+    enrollButton.disabled = true;
+    // Change the text of the button
+    enrollButton.innerText = `You are now enrolled.`;
+  }
 }
 
 export { showNextTopic, showQuiz, hideAllTopics, showCongratulationsMessage, enroll };

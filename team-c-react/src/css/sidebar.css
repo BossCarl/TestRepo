@@ -49,7 +49,7 @@ body {
 }
 
 #sidebarMenu {
-  z-index: 1;
+  z-index: -1; /* Adjust the z-index to a lower value */
   position: fixed;
   height: 100%;
   width: 250px; /* Added width property */
