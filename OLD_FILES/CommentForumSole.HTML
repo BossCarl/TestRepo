@@ -3,10 +3,10 @@
 
 <head>
     <title>FAQs</title>
-    <!-- Required meta tags -->
+    {/* Required meta tags */}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Style adjustment -->
+    {/* Style adjustment */}
     <style>
         body {
             background-color: #EBFFE5;
@@ -128,46 +128,46 @@
         }
     </style>
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    {/* Bootstrap CSS v5.2.1 */}
     <link Link to="../pages/https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous" />
-    <!-- Font Awesome -->
+    {/* Font Awesome */}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" Link to="../pages/#">
-                <img class="logo me-3" src="Pictures/logo.png" alt="tsukiden-logo">
+    {/* Navbar */}
+    <nav className="navbar navbar-expand-lg navbar-light">
+        <div className="container-fluid">
+            <a className="navbar-brand" Link to="../pages/#">
+                <img className="logo me-3" src="Pictures/logo.png" alt="tsukiden-logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-success" Link to="../pages/#">Dashboard</a>
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <a className="nav-link fw-bold text-success" Link to="../pages/#">Dashboard</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" Link to="../pages/#">Profile</a>
+                    <li className="nav-item">
+                        <a className="nav-link" Link to="../pages/#">Profile</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" Link to="../pages/#" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" Link to="../pages/#" id="dropdownMenuButton" data-bs-toggle="dropdown"
                             aria-expanded="false">My Courses</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" Link to="../pages/#">Program Overview</a></li>
-                            <li><a class="dropdown-item" Link to="../pages/#">Assessments</a></li>
-                            <li><a class="dropdown-item" Link to="../pages/#">Certifications</a></li>
+                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a className="dropdown-item" Link to="../pages/#">Program Overview</a></li>
+                            <li><a className="dropdown-item" Link to="../pages/#">Assessments</a></li>
+                            <li><a className="dropdown-item" Link to="../pages/#">Certifications</a></li>
                         </ul>
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a Link to="../pages/#" class="btn btn-success logout-btn">Logout</a>
+                <ul className="navbar-nav ms-auto">
+                    <li className="nav-item">
+                        <a Link to="../pages/#" className="btn btn-success logout-btn">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -175,25 +175,25 @@
     </nav>
   <section style="background-color: #EBFFE5;">
     
-        <!-- Title -->
-        <div class="comment-forum-title" style="text-align: center; color:#0e3b03; ">
+        {/* Title */}
+        <div className="comment-forum-title" style="text-align: center; color:#0e3b03; ">
             <h1>Forum</h1>
         </div>
-        <div class="container my-5 py-1 text-dark">
-            <!-- New container for input field and button/* Update: January 12, 2024*/ --> 
-<div class="row d-flex justify-content-center">
-<div class="col-md-11 col-lg-9 col-xl-7">
-  <div class="input-group">
-      <div class="form-floating">
-          <textarea class="form-control" placeholder="State comment" id="newPostTextArea" style="height: 150px;"></textarea>
+        <div className="container my-5 py-1 text-dark">
+            {/* New container for input field and button/* Update: January 12, 2024*/ */} 
+<div className="row d-flex justify-content-center">
+<div className="col-md-11 col-lg-9 col-xl-7">
+  <div className="input-group">
+      <div className="form-floating">
+          <textarea className="form-control" placeholder="State comment" id="newPostTextArea" style="height: 150px;"></textarea>
           <label for="newPostTextArea">Share your thoughts</label>
       </div>
   </div>
-  <div class="d-md-flex justify-content-md-end"><!--Update: January 12, 2024-->
-      <button class="btn btn-success mt-2" onclick="postNewPost()">Post</button>
+  <div className="d-md-flex justify-content-md-end">{/*Update: January 12, 2024*/}
+      <button className="btn btn-success mt-2" onclick="postNewPost()">Post</button>
   </div>
 
-        <!--Update: January 12, 2024-->
+        {/*Update: January 12, 2024*/}
         <script>
           function postNewPost() {
               var newPostText = document.getElementById('newPostTextArea').value;
@@ -221,120 +221,120 @@
               document.getElementById('newPostTextArea').value = '';
           }
       </script>
-      <!--Update: January 12, 2024-->
-      <!-- Container for displaying posts -->
-<div id="postContainer" class="mt-3">
-<!-- Existing posts or dynamically added posts will be displayed here -->
+      {/*Update: January 12, 2024*/}
+      {/* Container for displaying posts */}
+<div id="postContainer" className="mt-3">
+{/* Existing posts or dynamically added posts will be displayed here */}
 </div>
 </div>
 </div>
-<!--Update: January 12, 2024-->
-            <!-- First Container[POST] -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-11 col-lg-9 col-xl-7">
-                    <div class="card w-100">
-                        <div class="card-body p-4">
-                            <div class="d-flex">
-                                <!-- Replace 'your_placeholder_image_url.jpg' with the actual placeholder image URL -->
+{/*Update: January 12, 2024*/}
+            {/* First Container[POST] */}
+            <div className="row d-flex justify-content-center">
+                <div className="col-md-11 col-lg-9 col-xl-7">
+                    <div className="card w-100">
+                        <div className="card-body p-4">
+                            <div className="d-flex">
+                                {/* Replace 'your_placeholder_image_url.jpg' with the actual placeholder image URL */}
                                 <img src="https://via.placeholder.com/40" alt="User Image"
-                                    class="rounded-circle me-3" style="width: 40px; height: 40px;">
-                                <div class="d-flex flex-column fullWidth">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                    className="rounded-circle me-3" style="width: 40px; height: 40px;">
+                                <div className="d-flex flex-column fullWidth">
+                                    <div className="d-flex justify-content-between align-items-center mb-2">
                                         <div>
                                             <h5>User</h5>
-                                            <p class="small" id="timestamp">Timestamp goes here</p>
+                                            <p className="small" id="timestamp">Timestamp goes here</p>
                                         </div>
-                                        <div class="dropdown position-absolute top-0 end-0">
-                                            <a class="link-muted" Link to="../pages/#" role="button" id="dropdownMenuLink"
+                                        <div className="dropdown position-absolute top-0 end-0">
+                                            <a className="link-muted" Link to="../pages/#" role="button" id="dropdownMenuLink"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class='bx bx-dots-horizontal-rounded'></i>
+                                                <i className='bx bx-dots-horizontal-rounded'></i>
                                             </a>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <li><a class="dropdown-item" Link to="../pages/#" onclick="editPost()">Edit</a></li>
-                                                <li><a class="dropdown-item" Link to="../pages/#">Delete</a></li>
+                                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a className="dropdown-item" Link to="../pages/#" onclick="editPost()">Edit</a></li>
+                                                <li><a className="dropdown-item" Link to="../pages/#">Delete</a></li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <p class="mt-3" id="postContent">
+                                    <p className="mt-3" id="postContent">
                                         Does anyone have a hard time understanding the Chapter 2 of Java? Tell me your
                                         insights. I would really love to share mine.
                                     </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <a Link to="../pages/#!" class="link-muted me-2"><i class='bx bx-like'></i>132</a>
-                                            <a Link to="../pages/#!" class="link-muted"><i class='bx bx-dislike'></i>15</a>
-                                            <a Link to="../pages/#commentTextArea" class="link-muted"
-                                                onclick="toggleCommentVisibility()"><i class='bx bx-reply'></i> Reply</a>
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <div className="d-flex align-items-center">
+                                            <a Link to="../pages/#!" className="link-muted me-2"><i className='bx bx-like'></i>132</a>
+                                            <a Link to="../pages/#!" className="link-muted"><i className='bx bx-dislike'></i>15</a>
+                                            <a Link to="../pages/#commentTextArea" className="link-muted"
+                                                onclick="toggleCommentVisibility()"><i className='bx bx-reply'></i> Reply</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-<!--Update: January 12, 2024-->
-                            <!-- Text area for comments (initially hidden) -->
-                            <div id="commentContainer" class="mt-3" style="display: none;">
-                                <textarea id="commentTextArea" class="form-control" rows="3"
+{/*Update: January 12, 2024*/}
+                            {/* Text area for comments (initially hidden) */}
+                            <div id="commentContainer" className="mt-3" style="display: none;">
+                                <textarea id="commentTextArea" className="form-control" rows="3"
                                     placeholder="Write your comment..."></textarea>
-                                <button class="btn btn-primary mt-2" onclick="postComment()">Post Comment</button>
+                                <button className="btn btn-primary mt-2" onclick="postComment()">Post Comment</button>
                             </div>
                         </div>
-                        <!-- Container for displaying nested comments -->
-                        <div id="nestedCommentContainer" class="mt-3">
-                            <!-- Existing comments or dynamically added comments will be displayed here -->
+                        {/* Container for displaying nested comments */}
+                        <div id="nestedCommentContainer" className="mt-3">
+                            {/* Existing comments or dynamically added comments will be displayed here */}
                         </div>
                     </div>
                 </div>
             </div>
-<!--Update: January 12, 2024-->
-            <!-- Second Container[COMMENT] -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-11 col-lg-9 col-xl-7">
-                    <!-- Comment template (hidden) -->
-                    <div id="commentTemplate" class="card w-100" style="display: none;">
-                        <div class="card-body p-4">
-                            <div class="comment-container d-flex align-items-start">
+{/*Update: January 12, 2024*/}
+            {/* Second Container[COMMENT] */}
+            <div className="row d-flex justify-content-center">
+                <div className="col-md-11 col-lg-9 col-xl-7">
+                    {/* Comment template (hidden) */}
+                    <div id="commentTemplate" className="card w-100" style="display: none;">
+                        <div className="card-body p-4">
+                            <div className="comment-container d-flex align-items-start">
                                 <img src="https://via.placeholder.com/40" alt="User Image"
-                                    class="rounded-circle me-3" style="width: 40px; height: 40px;">
-                                <div class="dropdown position-absolute top-0 end-0">
-                                    <a class="link-muted" Link to="../pages/#" role="button" id="dropdownMenuLink"
+                                    className="rounded-circle me-3" style="width: 40px; height: 40px;">
+                                <div className="dropdown position-absolute top-0 end-0">
+                                    <a className="link-muted" Link to="../pages/#" role="button" id="dropdownMenuLink"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class='bx bx-dots-horizontal-rounded'></i>
+                                        <i className='bx bx-dots-horizontal-rounded'></i>
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <li><a class="dropdown-item" Link to="../pages/#">Edit</a></li>
-                                        <li><a class="dropdown-item" Link to="../pages/#">Delete</a></li>
+                                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a className="dropdown-item" Link to="../pages/#">Edit</a></li>
+                                        <li><a className="dropdown-item" Link to="../pages/#">Delete</a></li>
                                     </ul>
                                 </div>
-                                <div class="flex-grow-1">
+                                <div className="flex-grow-1">
                                     <h5>User</h5>
-                                    <p class="small" id="commentTimestamp">Just now</p>
-                                    <div class="comment-body">
+                                    <p className="small" id="commentTimestamp">Just now</p>
+                                    <div className="comment-body">
                                         <p id="commentContent">
                                             Comment content goes here.
                                         </p>
                                     </div>
-                                    <div class="comment-actions d-flex align-items-center">
-                                        <a Link to="../pages/#!" class="link-muted me-2"><i class='bx bx-like'></i>56</a>
-                                        <a Link to="../pages/#!" class="link-muted me-2"><i class='bx bx-dislike'></i>24</a>
-                                        <a Link to="../pages/#commentTextArea" class="link-muted"
-                                            onclick="toggleCommentVisibility()"><i class='bx bx-reply'></i>Reply</a>
+                                    <div className="comment-actions d-flex align-items-center">
+                                        <a Link to="../pages/#!" className="link-muted me-2"><i className='bx bx-like'></i>56</a>
+                                        <a Link to="../pages/#!" className="link-muted me-2"><i className='bx bx-dislike'></i>24</a>
+                                        <a Link to="../pages/#commentTextArea" className="link-muted"
+                                            onclick="toggleCommentVisibility()"><i className='bx bx-reply'></i>Reply</a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Text area for comments (initially hidden) -->
-                            <div id="commentContainer" class="mt-3" style="display: none;">
-                                <textarea id="commentTextArea" class="form-control" rows="3"
+                            {/* Text area for comments (initially hidden) */}
+                            <div id="commentContainer" className="mt-3" style="display: none;">
+                                <textarea id="commentTextArea" className="form-control" rows="3"
                                     placeholder="Write your comment..."></textarea>
-                                <button class="btn btn-primary mt-2" onclick="postComment()">Post Comment</button>
+                                <button className="btn btn-primary mt-2" onclick="postComment()">Post Comment</button>
                             </div>
-                            <!-- Container for displaying nested comments -->
-                            <div id="nestedCommentContainer" class="mt-3">
-                                <!-- Existing comments or dynamically added comments will be displayed here -->
+                            {/* Container for displaying nested comments */}
+                            <div id="nestedCommentContainer" className="mt-3">
+                                {/* Existing comments or dynamically added comments will be displayed here */}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-<!--Update: January 12, 2024-->
+{/*Update: January 12, 2024*/}
             <script>
               function toggleCommentVisibility() {
                   var commentContainer = document.getElementById('commentContainer');
@@ -412,7 +412,7 @@
           </script>
         </div>
     </section>
-    <!-- Bootstrap JavaScript Libraries -->
+    {/* Bootstrap JavaScript Libraries */}
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

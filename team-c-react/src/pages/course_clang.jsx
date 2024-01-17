@@ -1,13 +1,10 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { Link } from "react-router-dom";
-import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/sidebar.css';
-import { useModal, showNextTopic, quizValidation } from "../js/script";
+import { showNextTopic } from "../js/script.jsx";
 
 function Course_clang() {
-  // Destructure the useModal functions
-  const { handleShowModal, handleCloseModal } = useModal();
 
   return (
     <Fragment>
@@ -35,11 +32,16 @@ function Course_clang() {
             <Link to="#" onClick={() => showNextTopic(2)} className="list-group-item list-group-item-action" style={{ fontSize: '18px', color: '#0e3b03', backgroundColor: '#D9FFCF', textAlign: 'right', overflow: 'visible' }}>
               <i className="fas fa-lock fa-fw me-3"></i><span>TOPIC #3</span>
             </Link>
+            <button
+              type="button"
+              className="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              style={{ fontSize: '18px', color: '#0e3b03', backgroundColor: '#D9FFCF', textAlign: 'right', overflow: 'visible' }}
 
-             {/* React-Bootstrap Modal Trigger Button */}
-            <Button variant="primary" onClick={() => { quizValidation(); }}>
-              Take A Quiz!  
-            </Button>
+            >
+             Take A Quiz!
+            </button>
           </div>
         </div>
       </nav>
@@ -60,25 +62,24 @@ function Course_clang() {
       {/* End of Topic Container */}
       {/* End of Main Layout */}
 
-      {/* React-Bootstrap Modal */}
-      <Modal show={false} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Take A Quiz!</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {/* Add quiz content here */}
-          <p>This is the quiz content.</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            Close
-          </Button>
-          {/* You can handle quiz submission logic here */}
-          <Button variant="primary" onClick={() => console.log('Quiz submitted')}>
-            Take Quiz
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div className="modal-dialog">
+    <div className="modal-content" style={{ backgroundColor: '#D9FFCF' }}>
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Take the quiz?</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body text-center">
+      <p>You will be redirected to Google Form's website. Please keep your notes and answer the Quiz honestly.</p><p>Good luck trainee!</p>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={() => window.open('https://www.google.com', '_blank')} style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px'}}>Yes</button>
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px' }}>Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
       {/* Start of JS for Main Layout */}
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-+qU78ihVd8FhDInHkhNOl3p5nhtvZq+YP1Jv60hyVgvt/aGzfODJzL2mHTi/xIsN" crossorigin="anonymous"></script>

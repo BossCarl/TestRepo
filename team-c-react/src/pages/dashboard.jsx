@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { enroll } from '../js/script.js';
-import Navbar from '../components/navbar.js';
+import { enroll } from '../js/script';
+import Navbar from '../components/navbar';
 
 function Dashboard() {
   return (

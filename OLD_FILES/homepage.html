@@ -2,99 +2,99 @@
 <html lang="en">
 
 <head>
-    <!-- Bootstrap 5 -->
+    {/* Bootstrap 5 */}
     <link Link to="../pages/https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- CSS -->
+    {/* CSS */}
     <link rel="stylesheet" Link to="../pages/css/base_style.css">
-    <!-- Font Awesome -->
+    {/* Font Awesome */}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Dashboard</title>
-    <!-- Mobile Integration -->
+    {/* Mobile Integration */}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 </head>
 
 <body>
 
-    <!-- Start of Main Navbar -->
-    <div class="main-container">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D9FFCF;">
-            <div class="container-fluid">
-                <img class="logo me-1 img-fluid" src="pics/logo.png" alt="tsukiden-logo" style="width: 150px;">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    {/* Start of Main Navbar */}
+    <div className="main-container">
+        <nav className="navbar navbar-expand-lg navbar-light" style="background-color: #D9FFCF;">
+            <div className="container-fluid">
+                <img className="logo me-1 img-fluid" src="pics/logo.png" alt="tsukiden-logo" style="width: 150px;">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-success fw-bold" aria-current="page" Link to="../pages/homepage.js">Dashboard</a>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <a className="nav-link text-success fw-bold" aria-current="page" Link to="../pages/homepage.js">Dashboard</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 My Courses
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" Link to="../pages/course.js">Program Overview</a></li>
-                                <li><a class="dropdown-item" Link to="../pages/assessment.js">Assessments</a></li>
+                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a className="dropdown-item" Link to="../pages/course.js">Program Overview</a></li>
+                                <li><a className="dropdown-item" Link to="../pages/assessment.js">Assessments</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" Link to="../pages/forum.js">Forum</a>
+                        <li className="nav-item">
+                            <a className="nav-link" aria-current="page" Link to="../pages/forum.js">Forum</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn" style="border-color: #0e3b03;" type="submit">LOGOUT</button>
+                    <form className="d-flex">
+                        <button className="btn" style="border-color: #0e3b03;" type="submit">LOGOUT</button>
                     </form>
                 </div>
             </div>
         </nav>
     </div>
-    <!-- End of Main Navbar -->
+    {/* End of Main Navbar */}
 
-    <!-- Header title -->
-    <div class="header p-3 h-50 d-flex align-items-center justify-content-center">
-        <div class="title p-3 text-center">
-            <div class="jap-char">
-                <h1 class="fw-bold">月伝で自分のやり方を学びましょう。</h1>
+    {/* Header title */}
+    <div className="header p-3 h-50 d-flex align-items-center justify-content-center">
+        <div className="title p-3 text-center">
+            <div className="jap-char">
+                <h1 className="fw-bold">月伝で自分のやり方を学びましょう。</h1>
             </div>
-            <div class="eng-char">
+            <div className="eng-char">
                 <h4>Learn your way at Tsukiden.</h4>
             </div>
-            <div class="courses-btn mt-3">
-                <a Link to="../pages/course.js" class="btn btn-view-course text-white">View Courses</a>
+            <div className="courses-btn mt-3">
+                <a Link to="../pages/course.js" className="btn btn-view-course text-white">View Courses</a>
             </div>
         </div>
     </div>
 
-    <!-- Course Previews -->
-    <div class="course-title">
-        <h1 class="course-prev fw-bold text-center mt-5">Course Previews</h1>
+    {/* Course Previews */}
+    <div className="course-title">
+        <h1 className="course-prev fw-bold text-center mt-5">Course Previews</h1>
     </div>
 
-    <!-- Courses -->
-    <div class="course-preview-ctn">
-        <!-- Version Control: SVN -->
-        <div class="card-container">
-            <div class="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
-                <div class="card-header bg-transparent border-success"></div>
-                <div class="card-body text-success" style="height:100px;">
-                    <h3 class="card-title fw-bold">Version Control: SVN</h3>
+    {/* Courses */}
+    <div className="course-preview-ctn">
+        {/* Version Control: SVN */}
+        <div className="card-container">
+            <div className="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
+                <div className="card-header bg-transparent border-success"></div>
+                <div className="card-body text-success" style="height:100px;">
+                    <h3 className="card-title fw-bold">Version Control: SVN</h3>
                 </div>
-                <div class="card-footer bg-transparent border-success">
-                    <p class="card-text mt-4 ">
+                <div className="card-footer bg-transparent border-success">
+                    <p className="card-text mt-4 ">
                         Apache Subversion (SVN) is a centralized version control system, facilitating collaborative
                         software development through version tracking, allowing multiple developers to work on projects
                         concurrently.
                     </p>
-                    <!-- Button trigger modal -->
-                    <div class="d-flex justify-content-center">
+                    {/* Button trigger modal */}
+                    <div className="d-flex justify-content-center">
                         <button type="button"
                             style="display: flex; align-items: center; justify-content: center; height: 30px;"
-                            class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                            className="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal1"
                             id="enrollButton1">
                             Enroll Now!
                         </button>
@@ -103,24 +103,24 @@
             </div>
         </div>
 
-        <!-- Version Control: SVN -->
-        <div class="card-container">
-            <div class="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
-                <div class="card-header bg-transparent border-success"></div>
-                <div class="card-body text-success" style="height:100px;">
-                    <h3 class="card-title fw-bold">Version Control: SVN</h3>
+        {/* Version Control: SVN */}
+        <div className="card-container">
+            <div className="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
+                <div className="card-header bg-transparent border-success"></div>
+                <div className="card-body text-success" style="height:100px;">
+                    <h3 className="card-title fw-bold">Version Control: SVN</h3>
                 </div>
-                <div class="card-footer bg-transparent border-success">
-                    <p class="card-text mt-4 ">
+                <div className="card-footer bg-transparent border-success">
+                    <p className="card-text mt-4 ">
                         Apache Subversion (SVN) is a centralized version control system, facilitating collaborative
                         software development through version tracking, allowing multiple developers to work on projects
                         concurrently.
                     </p>
-                    <!-- Button trigger modal -->
-                    <div class="d-flex justify-content-center">
+                    {/* Button trigger modal */}
+                    <div className="d-flex justify-content-center">
                         <button type="button"
                             style="display: flex; align-items: center; justify-content: center; height: 30px;"
-                            class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                            className="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal2"
                             id="enrollButton2">
                             Enroll Now!
                         </button>
@@ -129,24 +129,24 @@
             </div>
         </div>
 
-        <!-- HTML Programming -->
-        <div class="card-container">
-            <div class="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
-                <div class="card-header bg-transparent border-success"></div>
-                <div class="card-body text-success" style="height:100px;">
-                    <h3 class="card-title fw-bold">HTML Programming</h3>
+        {/* HTML Programming */}
+        <div className="card-container">
+            <div className="card border-success mt-3 mb-3" style="max-width: 14rem; border-radius: 10px;">
+                <div className="card-header bg-transparent border-success"></div>
+                <div className="card-body text-success" style="height:100px;">
+                    <h3 className="card-title fw-bold">HTML Programming</h3>
                 </div>
-                <div class="card-footer bg-transparent border-success">
-                    <p class="card-text mt-4">
+                <div className="card-footer bg-transparent border-success">
+                    <p className="card-text mt-4">
                         HTML (Hypertext Markup Language) is the standard language for creating web pages, defining the
                         structure and content using tags, ensuring compatibility and accessibility across various
                         browsers.
                     </p>
-                    <!-- Button trigger modal -->
-                    <div class="d-flex justify-content-center">
+                    {/* Button trigger modal */}
+                    <div className="d-flex justify-content-center">
                         <button type="button"
                             style="display: flex; align-items: center; justify-content: center; height: 30px;"
-                            class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                            className="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal3"
                             id="enrollButton3">
                             Enroll Now!
                         </button>
@@ -156,25 +156,25 @@
         </div>
     </div>
 
-    <!-- Modal 1 -->
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content" style="background-color: #D9FFCF;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">C Language Course</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    {/* Modal 1 */}
+    <div className="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div className="modal-dialog">
+            <div className="modal-content" style="background-color: #D9FFCF;">
+                <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLabel1">C Language Course</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <!-- Modal body content goes here -->
+                <div className="modal-body">
+                    {/* Modal body content goes here */}
                     <p>You will be enrolled in this course.</p>
                 </div>
-                <div class="modal-footer">
+                <div className="modal-footer">
                     <button type="button"
-                        class="btn"
+                        className="btn"
                         style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;"
                         data-bs-dismiss="modal">Close</button>
                     <button type="button"
-                        class="btn"
+                        className="btn"
                         style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;"
                         data-bs-dismiss="modal" onclick="enroll(1)">Enroll</button>
                 </div>
@@ -182,25 +182,25 @@
         </div>
     </div>
 
-    <!-- Modal 2 -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content" style="background-color: #D9FFCF;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel2">The Subversion Course</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    {/* Modal 2 */}
+    <div className="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div className="modal-dialog">
+            <div className="modal-content" style="background-color: #D9FFCF;">
+                <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLabel2">The Subversion Course</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <!-- Modal body content goes here -->
+                <div className="modal-body">
+                    {/* Modal body content goes here */}
                     <p>You will be enrolled in this course.</p>
                 </div>
-                <div class="modal-footer">
+                <div className="modal-footer">
                     <button type="button"
-                        class="btn"
+                        className="btn"
                         style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;"
                         data-bs-dismiss="modal">Close</button>
                     <button type="button"
-                        class="btn"
+                        className="btn"
                         style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;"
                         data-bs-dismiss="modal" onclick="enroll(2)">Enroll</button>
                 </div>
@@ -208,25 +208,25 @@
         </div>
     </div>
 
-    <!-- Modal 3 -->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content" style="background-color: #D9FFCF;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel3">HTML Programming Course</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    {/* Modal 3 */}
+    <div className="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div className="modal-dialog">
+            <div className="modal-content" style="background-color: #D9FFCF;">
+                <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLabel3">HTML Programming Course</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <!-- Modal body content goes here -->
+                <div className="modal-body">
+                    {/* Modal body content goes here */}
                     <p>You will be enrolled in this course. </p>
                 </div>
-                <div class="modal-footer">
+                <div className="modal-footer">
                     <button type="button"
-                        class="btn"
+                        className="btn"
                         style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;"
                         data-bs-dismiss="modal">Close</button>
                     <button type="button"
-                        class="btn"
+                        className="btn"
                         style="background-color:#0e3b03; color: #ffffff; border-radius: 20px; font-size: 15px;"
                         data-bs-dismiss="modal" onclick="enroll(3)">Enroll</button>
                 </div>
@@ -235,7 +235,7 @@
     </div>
 
     <script src="js/script.js"></script>
-    <!-- Bootstrap with Popper -->
+    {/* Bootstrap with Popper */}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
