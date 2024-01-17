@@ -1,0 +1,13 @@
+/* CARD POSITIONING */
+.course-preview-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left; 
+    flex-wrap: wrap;
+}
+
+/* CARD SPACING */
+.card-container {
+    margin: 10px;
+}

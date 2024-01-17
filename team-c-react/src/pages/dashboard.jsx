@@ -1,8 +1,13 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { enroll } from '../js/script';
+
+import '../css/dashboard_page.css'
 import Navbar from '../components/navbar';
+
 
 function Dashboard() {
   return (
@@ -17,7 +22,7 @@ function Dashboard() {
             <h4>Learn your way at Tsukiden.</h4>
           </div>
           <div className="courses-btn mt-3">
-            <Link to="../pages/course.js" className="btn btn-view-course text-white">View Courses</Link>
+            <Link to="/course" className="btn btn-view-course text-white">View Courses</Link>
           </div>
         </div>
       </div>

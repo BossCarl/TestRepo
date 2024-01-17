@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import { Link } from "react-router-dom";
 import Navbar from "../components/navbar";
+import '../css/course_page.css';
 
 function Course() {
     return (
@@ -30,13 +31,13 @@ function Course() {
                     <div className="card-header">
                         <ul className="nav nav-tabs card-header-tabs">
                             <li className="nav-item">
-                                <a className="nav-link active" id="clang-tab" data-bs-toggle="tab" href="#clang">C Language Programming</a>
+                                <a className="courseTabs nav-link active text-dark" id="clang-tab" data-bs-toggle="tab" href="#clang">C Language Programming</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="svn-tab" data-bs-toggle="tab" href="#hprog">Version Control: SVN</a>
+                                <a className="courseTabs nav-link text-dark" id="svn-tab" data-bs-toggle="tab" href="#hprog">Version Control: SVN</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="hprog-tab" data-bs-toggle="tab" href="#svn">HTML Programming</a>
+                                <a className="courseTabs nav-link text-dark" id="hprog-tab" data-bs-toggle="tab" href="#svn">HTML Programming</a>
                             </li>
                         </ul>
                     </div>

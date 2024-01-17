@@ -1,88 +1,85 @@
-/* General styles */
-body {
-  background-color: #fbfbfb;
-  position: relative;
-}
 
-@media (min-width: 991.98px) {
-  main {
-    padding-left: 10px; /* Adjust the padding to match the new sidebar width */
-    position: relative;
-    z-index: 0;
-    margin-top: 58px; /* Adjust the margin-top to make space for the fixed-top navbar */
-  }
-}
 
 /* Sidebar styles */
 .sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 58px 0 0; /* Height of navbar */
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-  width: 200px; /* Default width for larger screens */
+  bottom: 0; /* FOR PULLING THE SIDEBAR DOWNWARDS */
+  padding: 70px 0 0; /* FOR SIDEBAR HEIGHT */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 50%), 0 5px 15px 0 rgb(0 0 0 / 30%); /* FOR SHADOW EFFECT */
   z-index: 600;
-  height: 100vh; /* Adjusted height to 100% of viewport height */
-  background-color: #D9FFCF; /* Added background color */
-  overflow-y: auto; /* Added overflow-y property */
+  overflow-y: auto; /* OVERFLOW PROPERTY TO WRAP LONG TEXTS */
 }
 
 @media (max-width: 991.98px) {  
   .sidebar {
-    width: 100%; /* Full width for smaller screens */
+    width: 100%; /* FULL WIDTH FOR SMALLER SCREENS */
+  }
+  main {
+    padding-left: 10px; /* INCREASE TO MOVE IT TO RIGHT */
   }
 }
 
-.sidebar .active {
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: 100%; /* Adjusted height to 100% of parent container's height */
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #sidebarMenu {
+    width: 100%; /* Set the width to 100% for smaller screens */
+  }
+  
 }
 
 #sidebarMenu {
   z-index: -1; /* Adjust the z-index to a lower value */
   position: fixed;
   height: 100%;
-  width: 250px; /* Added width property */
+  width: 15%; /* Set the width as a percentage */
   background-color: #D9FFCF;
-  overflow-y: auto;
+  overflow: auto;
+  white-space: nowrap;
 }
 
-/* Highlight color on list-group-item hover */
-.list-group-item:hover {
-  background-color: #ff0000; /* Highlight color when hovered */
-}
 
-/* Additional styles for main layout */
+/* HIDES CONTENT WHEN USER HAS NOT CLICKED ANYTHING YET */
 .hidden {
   display: none !important;
 }
 
 main {
-  margin-left: 250px; /* Adjust this value based on your sidebar width */
-  margin-top: 58px; /* Adjust this value to match the height of the fixed-top navbar */
+  margin-left: 20%; /* MOVE CONTENT TO-RIGHT */
+  margin-top: 58px; /* MOVE CONTENT TO-LEFT */
 }
 
-.list-group {
-  width: 100%; /* Stretch the list-group to the footer */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+.returnButton {
+  width: 30px;
+  height: 30px;
 }
 
-.list-group-item {
-  overflow: visible; /* Allow content to overflow the button */
-  white-space: nowrap; /* Prevent text wrapping */
+.sidebarItems {
+ background-color: #D9FFCF;
+ color: #0e3b03;
+ white-space: normal;
+ 
 }
 
-.list-group-item span {
-  overflow: hidden;
-  text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+.sidebarItems:active,
+.sidebarItems:focus,
+.sidebarItems:hover {
+  color: #0e3b03;
+}
+
+
+.sidebarTitle {
+  font-size: 200%; /* Adjust the font size as needed */
+  color: #333; /* Set the text color */
+  font-weight: bold; /* Make the text bold */
+  white-space: wrap; /* Prevent text wrapping */
+  text-align: center;
+  align-items: center;
+}
+
+.sidebarItems{
+  text-align: center;
+}
+
+.btnReturn{
+  width: 30px;
+  height: 30px;
 }

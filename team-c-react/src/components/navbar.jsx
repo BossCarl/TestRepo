@@ -20,18 +20,18 @@ export default function CustomNavbar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
         <Navbar.Collapse id="navbarSupportedContent">
-          <Nav className="me-auto mb-2 mb-lg-0">
+          <Nav className="menuTabs me-auto mb-2 mb-lg-0">
             <Nav.Link as={NavLink} to="/" >
               Dashboard
             </Nav.Link>
             <NavDropdown 
               title="My Courses" 
               id="my-courses-dropdown"
-              className={isMyCoursesActive ? "active menuDropdown" : "menuDropdown"}>
-              <NavDropdown.Item as={NavLink} to="/course">
+              className="menuDropdown menuTabs">
+              <NavDropdown.Item as={NavLink} to="/course" className="navDropItems">
                 Program Overview
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/assessment">
+              <NavDropdown.Item as={NavLink} to="/assessment" className="navDropItems">
                 Assessments
               </NavDropdown.Item>
             </NavDropdown>
