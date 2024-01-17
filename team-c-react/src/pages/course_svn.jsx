@@ -10,9 +10,9 @@ function Course_svn() {
   return (
     <Fragment>
       <div className="sidebar" id="sidebarMenu">
-        <Link to="/course" className="itemgroup">
+        <div><a><Link to="/course" className="itemgroup">
           <img src="/pics/return.png" className="btnReturn float-start" alt="return-icon" />
-        </Link>
+        </Link></a></div>
         <span className="d-flex justify-content-end sidebarTitle">The Subversion</span>
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
