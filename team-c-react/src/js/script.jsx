@@ -14,18 +14,6 @@ function showNextTopic(topicNumber) {
   }
 }
 
-// Function to show the quiz
-function showQuiz() {
-  // Hide all topics
-  hideAllTopics();
-
-  // Show the quiz iframe
-  let iframeElement = document.getElementById('iframe');
-  if (iframeElement) {
-    iframeElement.classList.remove('hidden');
-  }
-}
-
 // Function to hide all topics
 function hideAllTopics() {
   for (let i = 0; i <= 2; i++) {
@@ -39,12 +27,6 @@ function hideAllTopics() {
   if (iframeElement) {
     iframeElement.classList.add('hidden');
   }
-}
-
-// Function to show congratulations message using Bootstrap modal
-function showCongratulationsMessage() {
-  var myModal = new bootstrap.Modal(document.getElementById('congratulationsModal'));
-  myModal.show();
 }
 
 // Function to enroll and disable the button
@@ -64,4 +46,4 @@ function redirectToGoogle() {
 
 
 // Exporting all functions and hooks
-export { showNextTopic, showQuiz, hideAllTopics, showCongratulationsMessage, enroll, redirectToGoogle };
+export { showNextTopic, hideAllTopics, enroll, redirectToGoogle };

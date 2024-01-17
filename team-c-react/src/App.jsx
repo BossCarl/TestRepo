@@ -7,7 +7,7 @@ import Assessments from './pages/assessment';
 import Course_svn from './pages/course_svn';
 import Course_clang from './pages/course_clang';
 import Course_hprog from './pages/course_hprog';
-
+import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
