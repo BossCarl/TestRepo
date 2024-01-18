@@ -34,107 +34,108 @@ function Dashboard() {
       </div>
 
       {/* Courses */}
-      <div className="course-preview-ctn">
-        {/* SUBVERSION */}
-        <div className="card-container">
-          <div className="card border-success mt-3 mb-3" style={{ maxWidth: '14rem', borderRadius: '10px' }}>
-            <div className="card-header bg-transparent border-success"></div>
-            <div className="card-body text-success" style={{ maxHeight: '100px', overflow: 'hidden' }}>
-              <h3 className="card-title fw-bold">Version Control: SVN</h3>
-            </div>
-            <div className="card-footer bg-transparent border-success">
-              <p className="card-text mt-4">
-                Apache Subversion (SVN) is a centralized version control system, facilitating collaborative
-                software development through version tracking, allowing multiple developers to work on projects
-                concurrently.
-              </p>
-              <div className="d-flex justify-content-center">
-                <button
-                  type="button"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    height: '30px'
-                  }}
-                  className="btn btn-success"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal1"
-                  id="enrollButton1"
-                >
-                  Enroll Now!
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* C - LANGUAGE */}
-        <div className="card-container">
-          <div className="card border-success mt-3 mb-3" style={{ maxWidth: '14rem', borderRadius: '10px' }}>
-            <div className="card-header bg-transparent border-success"></div>
-            <div className="card-body text-success" style={{ maxHeight: '100px', overflow: 'hidden' }}>
-              <h3 className="card-title fw-bold">C Programming</h3>
-            </div>
-            <div className="card-footer bg-transparent border-success">
-              <p className="card-text mt-4">
-                In a C programming course, students learn essential concepts such as syntax, data types, and memory management, equipping them with practical skills to write efficient code and system that is needed for.
-              </p>
-              <div className="d-flex justify-content-center">
-                <button
-                  type="button"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    height: '30px'
-                  }}
-                  className="btn btn-success"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal2"
-                  id="enrollButton2"
-                >
-                  Enroll Now!
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* HTML PROGRAMMING */}
-        <div className="card-container">
-          <div className="card border-success mt-3 mb-3" style={{ maxWidth: '14rem', borderRadius: '10px' }}>
-            <div className="card-header bg-transparent border-success"></div>
-            <div className="card-body text-success" style={{ height: '100px', overflow: 'hidden' }}>
-              <h3 className="card-title fw-bold">HTML Programming</h3>
-            </div>
-            <div className="card-footer bg-transparent border-success">
-              <p className="card-text mt-4">
-                HTML (Hypertext Markup Language) is the standard language for creating web pages, defining the
-                structure and content using tags, ensuring compatibility and accessibility across various browsers.
-              </p>
-              <div className="d-flex justify-content-center">
-                <button
-                  type="button"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    height: '30px'
-                  }}
-                  className="btn btn-success"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal3"
-                  id="enrollButton3"
-                >
-                  Enroll Now!
-                </button>
-              </div>
-            </div>
-          </div>
+<div className="course-preview-ctn">
+  {/* C - LANGUAGE */}
+  <div className="card-container">
+    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '14rem', borderRadius: '10px' }}>
+      <div className="card-header bg-transparent border-success"></div>
+      <div className="card-body text-success" style={{ maxHeight: '100px', overflow: 'hidden' }}>
+        <h3 className="card-title fw-bold">C Programming</h3>
+      </div>
+      <div className="card-footer bg-transparent border-success">
+        <p className="card-text mt-4">
+          In a C programming course, students learn essential concepts such as syntax, data types, and memory management, equipping them with practical skills to write efficient code and system that is needed for.
+        </p>
+        <div className="d-flex justify-content-center">
+          <button
+            type="button"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '30px'
+            }}
+            className="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal2"
+            id="enrollButton2"
+          >
+            Enroll Now!
+          </button>
         </div>
       </div>
-      {/* End of Courses */}
+    </div>
+  </div>
+
+  {/* Version Control: SVN */}
+  <div className="card-container">
+    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '14rem', borderRadius: '10px' }}>
+      <div className="card-header bg-transparent border-success"></div>
+      <div className="card-body text-success" style={{ maxHeight: '100px', overflow: 'hidden' }}>
+        <h3 className="card-title fw-bold">Version Control: SVN</h3>
+      </div>
+      <div className="card-footer bg-transparent border-success">
+        <p className="card-text mt-4">
+          Apache Subversion (SVN) is a centralized version control system, facilitating collaborative
+          software development through version tracking, allowing multiple developers to work on projects
+          concurrently.
+        </p>
+        <div className="d-flex justify-content-center">
+          <button
+            type="button"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '30px'
+            }}
+            className="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal1"
+            id="enrollButton1"
+          >
+            Enroll Now!
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* HTML PROGRAMMING */}
+  <div className="card-container">
+    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '14rem', borderRadius: '10px' }}>
+      <div className="card-header bg-transparent border-success"></div>
+      <div className="card-body text-success" style={{ height: '100px', overflow: 'hidden' }}>
+        <h3 className="card-title fw-bold">HTML Programming</h3>
+      </div>
+      <div className="card-footer bg-transparent border-success">
+        <p className="card-text mt-4">
+          HTML (Hypertext Markup Language) is the standard language for creating web pages, defining the
+          structure and content using tags, ensuring compatibility and accessibility across various browsers.
+        </p>
+        <div className="d-flex justify-content-center">
+          <button
+            type="button"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '30px'
+            }}
+            className="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal3"
+            id="enrollButton3"
+          >
+            Enroll Now!
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{/* End of Courses */}
+
 
       {/* Modals */}
       {/* MODAL C-LANG */}
@@ -159,8 +160,9 @@ function Dashboard() {
                   fontSize: '15px'
                 }}
                 data-bs-dismiss="modal"
+                onClick={() => enroll(1)}
               >
-                Close
+                Enroll
               </button>
               <button
                 type="button"
@@ -172,10 +174,10 @@ function Dashboard() {
                   fontSize: '15px'
                 }}
                 data-bs-dismiss="modal"
-                onClick={() => enroll(1)}
               >
-                Enroll
+                Close
               </button>
+              
             </div>
           </div>
         </div>
@@ -203,8 +205,9 @@ function Dashboard() {
                   fontSize: '15px'
                 }}
                 data-bs-dismiss="modal"
+                onClick={() => enroll(2)}
               >
-                Close
+                Enroll
               </button>
               <button
                 type="button"
@@ -216,10 +219,10 @@ function Dashboard() {
                   fontSize: '15px'
                 }}
                 data-bs-dismiss="modal"
-                onClick={() => enroll(2)}
               >
-                Enroll
+                Close
               </button>
+              
             </div>
           </div>
         </div>
@@ -247,8 +250,9 @@ function Dashboard() {
                   fontSize: '15px'
                 }}
                 data-bs-dismiss="modal"
+                onClick={() => enroll(3)}
               >
-                Close
+                Enroll
               </button>
               <button
                 type="button"
@@ -260,10 +264,10 @@ function Dashboard() {
                   fontSize: '15px'
                 }}
                 data-bs-dismiss="modal"
-                onClick={() => enroll(3)}
               >
-                Enroll
+                Close
               </button>
+              
             </div>
           </div>
         </div>
