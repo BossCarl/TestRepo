@@ -23,7 +23,3 @@ body {
 .btn-view-course:hover {
     background-color: #145304;
 }
-
-@media (max-width: 600px) {
-    
-}

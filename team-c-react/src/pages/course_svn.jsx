@@ -1,44 +1,15 @@
-import { Fragment, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Fragment} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { showNextTopic } from "../js/script.jsx";
-import '../css/sidebar.css';
 import '../css/subversion_page.css';
+import { showNextTopic } from "../js/script";
+import { Link } from "react-router-dom";
+import Sidebar from "../components/sidebar";
 
 function Course_svn() {
 
   return (
-    <Fragment>
-      <div className="sidebar" id="sidebarMenu">
-        <div><a><Link to="/course" className="itemgroup">
-          <img src="/pics/return.png" className="btnReturn float-start" alt="return-icon" />
-        </Link></a></div>
-        <span className="d-flex justify-content-end sidebarTitle">The Subversion</span>
-        <hr />
-        <ul className="nav nav-pills flex-column mb-auto">
-          <li className="nav-item">
-            <a href="#" onClick={() => showNextTopic(0)} className="sidebarItems nav-link" aria-current="page">
-              SHOW TOPIC 0
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={() => showNextTopic(1)} className="sidebarItems nav-link">
-              SHOW TOPIC 1
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={() => showNextTopic(2)} className="sidebarItems nav-link">
-              SHOW TOPIC 2
-            </a>
-          </li>
-          <li>
-            <a className="sidebarItems nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Take a Quiz!
-            </a>
-          </li>
-        </ul>
-      </div>
-
+    <>
+            
       {/* Main layout */}
       <main className="mainLayout">
         {/* Start of Topic Container */}
@@ -73,7 +44,7 @@ function Course_svn() {
           </div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 }
 

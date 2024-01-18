@@ -3,48 +3,13 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/sidebar.css';
 import { showNextTopic } from "../js/script.jsx";
+import Sidebar from "../components/sidebar.jsx";
 
 function Course_clang() {
 
   return (
     <Fragment>
-      {/* Start of Sidebar */}
-      <nav id="sidebarMenu" className="d-lg-block sidebar">
-        <div className="container-fluid">
-
-          <Link to="/course" className="itemgroup" style={{ backgroundColor: '#D9FFCF' }}>
-            <img src="/pics/return.png" className="float-start" style={{ width: '30px', height: '30px' }} alt="return-icon" />
-          </Link>
-
-          <div className="list-group list-group-flush mx-3 mt-4">
-            <Link to="#" className="list-group-item list-group-item-action py-2 ripple h4 fw-bold text-s d-flex align-items-center text-end" aria-current="true" style={{ backgroundColor: '#D9FFCF', color: '#0e3b03', whiteSpace: 'normal' }}>
-              <i className="fas fa-tachometer-alt fa-fw me-3"></i><span>C Language</span>
-            </Link>
-
-            <Link to="#" onClick={() => showNextTopic(0)} className="list-group-item list-group-item-action" style={{ fontSize: '18px', color: '#0e3b03', backgroundColor: '#D9FFCF', textAlign: 'right', overflow: 'visible' }}>
-              <i className="fas fa-chart-area fa-fw me-3"></i><span>TOPIC #1</span>
-            </Link>
-
-            <Link to="#" onClick={() => showNextTopic(1)} className="list-group-item list-group-item-action" style={{ fontSize: '18px', color: '#0e3b03', backgroundColor: '#D9FFCF', textAlign: 'right', overflow: 'visible' }}>
-              <i className="fas fa-lock fa-fw me-3"></i><span>TOPIC #2</span>
-            </Link>
-
-            <Link to="#" onClick={() => showNextTopic(2)} className="list-group-item list-group-item-action" style={{ fontSize: '18px', color: '#0e3b03', backgroundColor: '#D9FFCF', textAlign: 'right', overflow: 'visible' }}>
-              <i className="fas fa-lock fa-fw me-3"></i><span>TOPIC #3</span>
-            </Link>
-            <button
-              type="button"
-              className="btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              style={{ fontSize: '18px', color: '#0e3b03', backgroundColor: '#D9FFCF', textAlign: 'right', overflow: 'visible' }}
-
-            >
-             Take A Quiz!
-            </button>
-          </div>
-        </div>
-      </nav>
+      
 
       {/* Main layout */}
       <main>

@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: center;
     text-align: left; 
-    flex-wrap: wrap;
+    max-height: 100%;
 }
 
 /* CARD SPACING */

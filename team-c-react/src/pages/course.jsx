@@ -25,7 +25,6 @@ function Course() {
             <div className="course-title">
                 <h1 className="course-prev fw-bold text-center mt-5"></h1>
             </div>
-
             <div className="container mt-5">
                 <div className="card text-center">
                     <div className="card-header">
@@ -44,7 +43,7 @@ function Course() {
                     {/* C LANGUAGE */}
                     <div className="card-body tab-content">
                         <div className="tab-pane fade show active" id="clang">
-                            <h5 className="card-title">C Language Programming</h5>
+                            <h5 className="card-title text-center">C Language Programming</h5>
                             <p className="card-text">This Course will assure that the user will have the necessary skills to write and understand C codes.</p>
                             <div className="progress">
                                 <div className="progress-bar bg-success" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -62,9 +61,9 @@ function Course() {
                             </div>
                             <div className="space mt-4"></div>
                             <Link to="/course_hprog" className="btn btn-primary bg-success">Start Course</Link>
-                        </div>{
+                        </div>
                         
-                        /* SUBVERSION */}
+                        {/* SUBVERSION */}
                         <div className="tab-pane fade" id="hprog">
                             <h5 className="card-title">Version Control: Subversion (SVN)</h5>
                             <p className="card-text">The user will learn the purpose and commands needed to utilize Subversion.</p>

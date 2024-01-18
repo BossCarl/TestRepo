@@ -37,10 +37,11 @@ function Dashboard() {
 <div className="course-preview-ctn">
   {/* C - LANGUAGE */}
   <div className="card-container">
-    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '14rem', borderRadius: '10px' }}>
+    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '235px', borderRadius: '10px' }}>
       <div className="card-header bg-transparent border-success"></div>
-      <div className="card-body text-success" style={{ maxHeight: '100px', overflow: 'hidden' }}>
-        <h3 className="card-title fw-bold">C Programming</h3>
+      <div className="card-body text-success" style={{ height: '100px', overflow: 'hidden' }}>
+        {/* Set the fixed height for the card body */}
+        <h3 className="card-title fw-bold text-center">C Programming</h3>
       </div>
       <div className="card-footer bg-transparent border-success">
         <p className="card-text mt-4">
@@ -69,10 +70,11 @@ function Dashboard() {
 
   {/* Version Control: SVN */}
   <div className="card-container">
-    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '14rem', borderRadius: '10px' }}>
+    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '235px', borderRadius: '10px' }}>
       <div className="card-header bg-transparent border-success"></div>
-      <div className="card-body text-success" style={{ maxHeight: '100px', overflow: 'hidden' }}>
-        <h3 className="card-title fw-bold">Version Control: SVN</h3>
+      <div className="card-body text-success" style={{ height: '100px', overflow: 'hidden' }}>
+        {/* Set the fixed height for the card body */}
+        <h3 className="card-title fw-bold text-center">Version Control: SVN</h3>
       </div>
       <div className="card-footer bg-transparent border-success">
         <p className="card-text mt-4">
@@ -103,10 +105,11 @@ function Dashboard() {
 
   {/* HTML PROGRAMMING */}
   <div className="card-container">
-    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '14rem', borderRadius: '10px' }}>
+    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '235px', borderRadius: '10px' }}>
       <div className="card-header bg-transparent border-success"></div>
       <div className="card-body text-success" style={{ height: '100px', overflow: 'hidden' }}>
-        <h3 className="card-title fw-bold">HTML Programming</h3>
+        {/* Set the fixed height for the card body */}
+        <h3 className="card-title fw-bold text-center">HTML Programming</h3>
       </div>
       <div className="card-footer bg-transparent border-success">
         <p className="card-text mt-4">
@@ -135,6 +138,7 @@ function Dashboard() {
   </div>
 </div>
 {/* End of Courses */}
+
 
 
       {/* Modals */}
