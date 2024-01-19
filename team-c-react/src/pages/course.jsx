@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import { Link } from "react-router-dom";
-import Navbar from "../components/navbar";
+import '../css/course_page.css';
 
 function Course() {
     return (
@@ -24,32 +24,31 @@ function Course() {
             <div className="course-title">
                 <h1 className="course-prev fw-bold text-center mt-5"></h1>
             </div>
-
             <div className="container mt-5">
                 <div className="card text-center">
                     <div className="card-header">
                         <ul className="nav nav-tabs card-header-tabs">
                             <li className="nav-item">
-                                <a className="nav-link active" id="clang-tab" data-bs-toggle="tab" href="#clang">C Language Programming</a>
+                                <a className="courseTabs nav-link active text-dark" id="clang-tab" data-bs-toggle="tab" href="#clang">The SQL Queries</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="svn-tab" data-bs-toggle="tab" href="#hprog">Version Control: SVN</a>
+                                <a className="courseTabs nav-link text-dark" id="svn-tab" data-bs-toggle="tab" href="#hprog">Version Control: SVN</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="hprog-tab" data-bs-toggle="tab" href="#svn">HTML Programming</a>
+                                <a className="courseTabs nav-link text-dark" id="hprog-tab" data-bs-toggle="tab" href="#svn">HTML Programming</a>
                             </li>
                         </ul>
                     </div>
                     {/* C LANGUAGE */}
                     <div className="card-body tab-content">
                         <div className="tab-pane fade show active" id="clang">
-                            <h5 className="card-title">C Language Programming</h5>
-                            <p className="card-text">This Course will assure that the user will have the necessary skills to write and understand C codes.</p>
+                            <h5 className="card-title text-center">The SQL Queries</h5>
+                            <p className="card-text">This course guarantees that learners will acquire the essential expertise to compose and comprehend SQL queries effectively.</p>
                             <div className="progress">
                                 <div className="progress-bar bg-success" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div className="space mt-4"></div>
-                            <Link to="/course_clang" className="btn btn-primary bg-success">Start Course</Link>
+                            <Link to="/course_sql" className="btn btn-primary bg-success">Start Course</Link>
                         </div>
                         
                         {/* HTML */}
@@ -61,9 +60,9 @@ function Course() {
                             </div>
                             <div className="space mt-4"></div>
                             <Link to="/course_hprog" className="btn btn-primary bg-success">Start Course</Link>
-                        </div>{
+                        </div>
                         
-                        /* SUBVERSION */}
+                        {/* SUBVERSION */}
                         <div className="tab-pane fade" id="hprog">
                             <h5 className="card-title">Version Control: Subversion (SVN)</h5>
                             <p className="card-text">The user will learn the purpose and commands needed to utilize Subversion.</p>
