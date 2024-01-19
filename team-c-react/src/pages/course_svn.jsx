@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/sidebar.css';
 import '../css/mainLayout_styles.css';
 
-function Course_svn(){
+function CourseSvn(){
 
     return (
         <Fragment>
@@ -115,4 +115,4 @@ function Course_svn(){
         </Fragment>
       );
     }
-export default Course_svn;
+export default CourseSvn;

@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/sidebar.css';
 import '../css/mainLayout_styles.css';
 
-function Course_hprog(){
+function CourseHprog(){
 
     return (
         <Fragment>
@@ -115,4 +115,4 @@ function Course_hprog(){
         </Fragment>
       );
     }
-export default Course_hprog;
+export default CourseHprog;

@@ -4,9 +4,9 @@ import Dashboard from './pages/dashboard';
 import Course from './pages/course';
 import Navbar from './components/navbar';
 import Assessments from './pages/assessment';
-import Course_svn from './pages/course_svn';
-import Course_sql from './pages/course_sql';
-import Course_hprog from './pages/course_hprog';  
+import CourseSvn from './pages/course_svn';
+import CourseSql from './pages/course_sql';
+import CourseHprog from './pages/course_hprog';  
 import Sidebar from './components/sidebar';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,7 +29,7 @@ function App() {
             element={
               <>
                 <Sidebar />
-                <Course_svn />
+                <CourseSvn />
               </>
             }
           />
@@ -38,7 +38,7 @@ function App() {
             element={
               <>
                 <Sidebar />
-                <Course_hprog />
+                <CourseHprog />
               </>
             }
           />
@@ -47,7 +47,7 @@ function App() {
             element={
               <>
                 <Sidebar />
-                <Course_sql />
+                <CourseSql />
 
               </>
             }

@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/sidebar.css';
 import '../css/mainLayout_styles.css';
 
-function Course_sql(){
+function CourseSql(){
 
     return (
         <Fragment>
@@ -115,4 +115,4 @@ function Course_sql(){
         </Fragment>
       );
     }
-export default Course_sql;
+export default CourseSql;
