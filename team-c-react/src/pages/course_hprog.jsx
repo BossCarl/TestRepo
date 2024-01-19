@@ -1,14 +1,9 @@
 import { Fragment } from "react";
-<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/sidebar.css';
-=======
-import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/sidebar.css';
-import { showNextTopic } from "../js/script.jsx";
-import Sidebar from "../components/sidebar.jsx";
->>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
+import '../css/mainLayout_styles.css';
 
 function Course_hprog(){
 
@@ -16,20 +11,97 @@ function Course_hprog(){
         <Fragment>
           
           {/* Main layout */}
-          <main>
-            {/* Start of Topic Container */}
-            <div id="topic0" className="hidden">
-              TOPIC 0
+      <main className="mainLayout">
+        {/* Start of Topic Container */}
+        <div id="topic0" className="hidden">
+          <div className="container">
+            <h1>C Language</h1>
+            <h4>Introduction to C Language</h4>
+            <br />
+            <div class="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
+              <div class="col-12">
+                <div
+                  class="rounded-3"
+                  style={{
+                    fontSize: "18px",
+                    color: "#0e3b03",
+                    backgroundColor: "#D9FFCF",
+                    textAlign: "center",
+                    overflow: "visible",
+                    border: "2px solid",
+                    borderColor: "#0e3b03"
+                  }}
+                >
+                  <p className="lh-base">
+                    C is a procedural programming language initially developed
+                    by Dennis Ritchie in the year 1972 at Bell Laboratories of
+                    AT&T Labs. It was mainly developed as a system programming
+                    language to write the UNIX operating system.
+                    <br />
+                    Many later languages have borrowed syntax/features directly
+                    or indirectly from the C language. Like syntax of Java, PHP,
+                    JavaScript, and many other languages are mainly based on the
+                    C language. C++ is nearly a superset of C language (Only a
+                    few programs may compile in C, but not in C++). So, if a
+                    person learns C programming first, it will help him to learn
+                    any modern programming language as well. As learning C help
+                    to understand a lot of the underlying architecture of the
+                    operating system. Like pointers, working with memory
+                    locations, etc.
+                  </p>
+                </div>
+              </div>
+
+              {/*BUTTON TO STUDY TOPIC*/}
+              <div class="col-6 d-flex justify-content-center">
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  className="btn"
+                  style={{
+                    color: "#0e3b03",
+                    backgroundColor: "#D9FFCF",
+                    textAlign: "center",
+                    overflow: "visible",
+                    border: "2px solid",
+                    borderColor: "#0e3b03",
+                    align: "center"
+                 
+                  }}
+                >
+                  <img src="/pics/study.png" alt="study" class="zoom"
+                   
+                  />
+                </button>
+              </div>
+              {/*BUTTON FOR QUIZ*/}
+              <div class="col-6 d-flex justify-content-center">
+              <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  className="btn"
+                  style={{
+                    color: "#0e3b03",
+                    backgroundColor: "#D9FFCF",
+                    textAlign: "center",
+                    overflow: "visible",
+                    border: "2px solid",
+                    borderColor: "#0e3b03",
+                    align: "center"
+                   
+                  }}
+                >
+                  <img src="/pics/quizbtn.png" alt="study" class="zoom"
+                 
+                  />
+                </button>
+              </div>
             </div>
-            <div id="topic1" className="hidden">
-              TOPIC 1
-            </div>
-            <div id="topic2" className="hidden">
-              TOPIC 2
-            </div>
-          </main>
-          {/* End of Topic Container */}
-          {/* End of Main Layout */}
+          </div>
+        </div>
+      </main>
+      {/* End of Topic Container */}
+      {/* End of Main Layout */}
     
           <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
       <div className="modal-dialog">

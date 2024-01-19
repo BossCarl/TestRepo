@@ -1,12 +1,7 @@
 import React, { Fragment } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-=======
-import Navbar from "../components/navbar";
->>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
 import '../css/course_page.css';
 
 function Course() {
@@ -26,18 +21,13 @@ function Course() {
 
             {/* Course Previews */}
             <div className="course-title">
-                <h1 className="course-prev fw-bold text-center mt-5"></h1>
             </div>
             <div className="container mt-5">
                 <div className="card text-center">
                     <div className="card-header">
                         <ul className="nav nav-tabs card-header-tabs">
                             <li className="nav-item">
-<<<<<<< HEAD
                                 <a className="courseTabs nav-link active text-dark" id="clang-tab" data-bs-toggle="tab" href="#clang">The SQL Queries</a>
-=======
-                                <a className="courseTabs nav-link active text-dark" id="clang-tab" data-bs-toggle="tab" href="#clang">C Language Programming</a>
->>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
                             </li>
                             <li className="nav-item">
                                 <a className="courseTabs nav-link text-dark" id="svn-tab" data-bs-toggle="tab" href="#hprog">Version Control: SVN</a>
@@ -50,13 +40,8 @@ function Course() {
                     {/* C LANGUAGE */}
                     <div className="card-body tab-content">
                         <div className="tab-pane fade show active" id="clang">
-<<<<<<< HEAD
                             <h5 className="card-title text-center">The SQL Queries</h5>
                             <p className="card-text">This course guarantees that learners will acquire the essential expertise to compose and comprehend SQL queries effectively.</p>
-=======
-                            <h5 className="card-title text-center">C Language Programming</h5>
-                            <p className="card-text">This Course will assure that the user will have the necessary skills to write and understand C codes.</p>
->>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
                             <div className="progress">
                                 <div className="progress-bar bg-success" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>

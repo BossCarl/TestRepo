@@ -2,16 +2,9 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-<<<<<<< HEAD
-import { enroll } from '../js/script';
-import '../css/dashboard_page.css'
-=======
 
 import { enroll } from '../js/script';
-
 import '../css/dashboard_page.css'
-import Navbar from '../components/navbar';
->>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
 
 
 function Dashboard() {
@@ -42,7 +35,6 @@ function Dashboard() {
 <div className="course-preview-ctn">
   {/* C - LANGUAGE */}
   <div className="card-container">
-<<<<<<< HEAD
     <div className="card border-success mt-3 mb-3 " style={{ maxWidth: '235px', borderRadius: '10px' }}>
       <div className="card-header bg-transparent border-success"></div>
       <div className="card-body text-success" style={{ maxHeight: '100px', overflow: 'hidden' }}>
@@ -52,17 +44,6 @@ function Dashboard() {
       <div className="card-footer bg-transparent border-success">
         <p className="card-text mt-4">
         In a SQL querying workshop, participants delve into fundamental concepts such as syntax, database design, and optimization, empowering them with practical skills to write efficient queries and manage relational databases effectively.
-=======
-    <div className="card border-success mt-3 mb-3" style={{ maxWidth: '235px', borderRadius: '10px' }}>
-      <div className="card-header bg-transparent border-success"></div>
-      <div className="card-body text-success" style={{ height: '100px', overflow: 'hidden' }}>
-        {/* Set the fixed height for the card body */}
-        <h3 className="card-title fw-bold text-center">C Programming</h3>
-      </div>
-      <div className="card-footer bg-transparent border-success">
-        <p className="card-text mt-4">
-          In a C programming course, students learn essential concepts such as syntax, data types, and memory management, equipping them with practical skills to write efficient code and system that is needed for.
->>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
         </p>
         <div className="d-flex justify-content-center">
           <button
@@ -89,11 +70,7 @@ function Dashboard() {
   <div className="card-container">
     <div className="card border-success mt-3 mb-3" style={{ maxWidth: '235px', borderRadius: '10px' }}>
       <div className="card-header bg-transparent border-success"></div>
-<<<<<<< HEAD
       <div className="card-body text-success" style={{ maxHeight: '100px', overflow: 'hidden' }}>
-=======
-      <div className="card-body text-success" style={{ height: '100px', overflow: 'hidden' }}>
->>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
         {/* Set the fixed height for the card body */}
         <h3 className="card-title fw-bold text-center">Version Control: SVN</h3>
       </div>
