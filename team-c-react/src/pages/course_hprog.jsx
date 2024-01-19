@@ -9,14 +9,14 @@ function Course_hprog(){
 
     return (
         <Fragment>
-          
+          <div id="layoutContainer">
           {/* Main layout */}
       <main className="mainLayout">
         {/* Start of Topic Container */}
         <div id="topic0" className="hidden">
           <div className="container">
-            <h1>C Language</h1>
-            <h4>Introduction to C Language</h4>
+            <h1>HTML Programming</h1>
+            <h4>Introduction to HTML Programming</h4>
             <br />
             <div class="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
               <div class="col-12">
@@ -33,21 +33,7 @@ function Course_hprog(){
                   }}
                 >
                   <p className="lh-base">
-                    C is a procedural programming language initially developed
-                    by Dennis Ritchie in the year 1972 at Bell Laboratories of
-                    AT&T Labs. It was mainly developed as a system programming
-                    language to write the UNIX operating system.
-                    <br />
-                    Many later languages have borrowed syntax/features directly
-                    or indirectly from the C language. Like syntax of Java, PHP,
-                    JavaScript, and many other languages are mainly based on the
-                    C language. C++ is nearly a superset of C language (Only a
-                    few programs may compile in C, but not in C++). So, if a
-                    person learns C programming first, it will help him to learn
-                    any modern programming language as well. As learning C help
-                    to understand a lot of the underlying architecture of the
-                    operating system. Like pointers, working with memory
-                    locations, etc.
+                  The "HTML Programming" course provides a comprehensive exploration of Hypertext Markup Language (HTML), which stands as the standard language for creating web pages. In this course, participants delve into the fundamental aspects of HTML, understanding how to structure web content using HTML tags. The curriculum covers key topics such as document structure, text formatting, hyperlinks, images, forms, and multimedia integration. Through hands-on exercises and real-world examples, participants gain practical skills in creating well-structured and visually appealing web pages. This course serves as an essential foundation for anyone aspiring to become proficient in web development, ensuring compatibility and accessibility across various browsers.
                   </p>
                 </div>
               </div>
@@ -100,6 +86,7 @@ function Course_hprog(){
           </div>
         </div>
       </main>
+      </div>
       {/* End of Topic Container */}
       {/* End of Main Layout */}
     

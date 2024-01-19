@@ -26,23 +26,25 @@ function Sidebar() {
 
     return (
         <>
-            <div className="mainSvnContainer">
+            <div className="sidebar mainSvnContainer">
                 <div className="sidebar" id="sidebarMenu">
                     <span className="d-flex justify-content-end sidebarTitle">{sidebarTitle}</span>
                     <hr />
                     <ul className="nav nav-pills flex-column mb-auto">
                       {/* START OF SIDEBAR ITEM */}
-                        <li className="nav-item">
+                        <li className="sidebarItem nav-item">
                             <a onClick={() => showNextTopic(0)} className="sidebarItems nav-link" aria-current="page">
                                 HOME
                             </a>
                         </li>
+                        <hr/>
                         {/* END OF SIDEBAR ITEM */}
-                        <li>
-                            <Link to="/course" className="itemgroup">
-                                <img src="/pics/return.png" className="btnReturn float-start" alt="return-icon" />
-                            </Link>
-                        </li>
+                        <Link to="/course" className="buttonReturn text-center" style={{ textDecoration: 'none', color: 'black' }}>
+                          <div>
+                            <img src="/pics/return.png" className="btnReturn" alt="return-icon" />
+                            <span style={{ marginLeft: '5px' }}>Back</span>
+                          </div>
+                        </Link>
                     </ul>
                 </div>
             </div>

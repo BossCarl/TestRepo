@@ -27,5 +27,7 @@
     background-color: #BCE8B1;
 }
 
-
+.navbar {
+    z-index: 2;
+}
 

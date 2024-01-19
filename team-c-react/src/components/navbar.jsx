@@ -11,7 +11,7 @@ export default function CustomNavbar() {
 
   return (
     <Navbar expand="lg" variant="light" style={{ backgroundColor: '#D9FFCF' }}>
-      <div className="container-fluid">
+      <div className="navbar container-fluid">
         <Navbar.Brand href="#">
           <img className="logo me-1 img-fluid" src="/pics/logo.png" alt="tsukiden-logo" style={{ width: '150px' }} />
         </Navbar.Brand>
