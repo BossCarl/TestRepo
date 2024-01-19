@@ -1,6 +1,10 @@
 import React, { Fragment } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+<<<<<<< HEAD
+=======
+import Navbar from "../components/navbar";
+>>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
 
 function Assessments() {
   return (

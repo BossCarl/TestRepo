@@ -1,5 +1,9 @@
 import React from "react";
+<<<<<<< HEAD
 import { NavLink } from "react-router-dom";
+=======
+import { NavLink, useLocation } from "react-router-dom";
+>>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
 import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,6 +13,11 @@ import 'popper.js/dist/umd/popper.min.js';
 import '../css/navbar.css';  // Import your custom CSS file here
 
 export default function CustomNavbar() {
+<<<<<<< HEAD
+=======
+  const location = useLocation();
+  const isMyCoursesActive = location.pathname.startsWith("/course");
+>>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
 
   return (
     <Navbar expand="lg" variant="light" style={{ backgroundColor: '#D9FFCF' }}>

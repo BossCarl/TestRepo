@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/subversion_page.css';
+=======
+import { Fragment} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/subversion_page.css';
+import { showNextTopic } from "../js/script";
+import { Link } from "react-router-dom";
+import Sidebar from "../components/sidebar";
+>>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
 
 function Course_svn() {
 

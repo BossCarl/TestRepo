@@ -22,8 +22,11 @@ body {
 /* HOLD-CLICK EFFECT FOR VIEW COURSE ON HEADER SELECTED TITLES */
 .btn-view-course:hover {
     background-color: #145304;
+<<<<<<< HEAD
 }
 
 @media (max-width: 600px) {
     
+=======
+>>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
 }

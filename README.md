@@ -1,1 +1,3 @@
-~ Empty ~
+- Fixed Dropdown
+- Code Cleanup
+- New error found: Return button unclickable after clicking Topic/Take Quiz button/s.

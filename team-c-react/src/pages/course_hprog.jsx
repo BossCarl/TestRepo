@@ -1,6 +1,14 @@
 import { Fragment } from "react";
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/sidebar.css';
+=======
+import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/sidebar.css';
+import { showNextTopic } from "../js/script.jsx";
+import Sidebar from "../components/sidebar.jsx";
+>>>>>>> 968f1e91dae300ea4c9ead57a9dea4d11ce8cf44
 
 function Course_hprog(){
 
