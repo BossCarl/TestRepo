@@ -27,7 +27,12 @@ function ChapterHprog(){
             <p className="h4 text-white">CHAPTER 3: TITLE OF THE CHAPTER</p>
           </div>
         </div>
-        
+        <Link to='/course' className="buttonReturn text-center" style={{ textDecoration: 'none', color: 'black'}}>
+                          <div>
+                            <img src="/pics/return.png" className="btnReturn" alt="return-icon" />
+                            <span className="returnTitle" style={{ marginLeft: '5px' , color:'white'}}>Back</span>
+                          </div>
+                        </Link>
       </div>
         </>
     )
