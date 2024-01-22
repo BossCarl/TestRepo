@@ -1,17 +1,22 @@
 import React from 'react';
-import {Route, Routes} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Dashboard from './pages/dashboard';
 import Course from './pages/course';
 import Navbar from './components/navbar';
 import Assessments from './pages/assessment';
+
+import ChapterSvn from './pages/chapter_svn';
+import ChapterSql from './pages/chapter_sql';
+import ChapterHprog from './pages/chapter_hprog';
+
 import CourseSvn from './pages/course_svn';
+import CourseHprog from './pages/course_hprog';
 import CourseSql from './pages/course_sql';
-import CourseHprog from './pages/course_hprog';  
+
 import Sidebar from './components/sidebar';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 
 function App() {
   return (
@@ -48,10 +53,14 @@ function App() {
               <>
                 <Sidebar />
                 <CourseSql />
-
               </>
             }
           />
+
+          {/* Routes for the Chapter components with specified paths */}
+          <Route path="/chapters_svn/*" element={<ChapterSvn />} />
+          <Route path="/chapters_sql/*" element={<ChapterSql />} />
+          <Route path="/chapters_hprog/*" element={<ChapterHprog />} />
         </Routes>
       </div>
     </>

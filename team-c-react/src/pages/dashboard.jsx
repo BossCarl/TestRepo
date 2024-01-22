@@ -137,8 +137,6 @@ function Dashboard() {
 </div>
 {/* End of Courses */}
 
-
-
       {/* Modals */}
       {/* MODAL C-LANG */}
       <div className="modal fade" id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">

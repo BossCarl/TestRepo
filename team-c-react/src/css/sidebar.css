@@ -5,8 +5,10 @@
   bottom: 0; /* FOR PULLING THE SIDEBAR DOWNWARDS */
   padding: 70px 0 0; /* FOR SIDEBAR HEIGHT */
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 50%), 0 5px 15px 0 rgb(0 0 0 / 30%); /* FOR SHADOW EFFECT */
-  z-index: 600;
   overflow-y: auto; /* OVERFLOW PROPERTY TO WRAP LONG TEXTS */
+  position: fixed;
+  z-index: 1; /* Ensure this value is higher than the z-index of mainLayout */
+  /* ... other styles for the sidebar */
 }
 
 @media (max-width: 991.98px) {  
@@ -34,7 +36,7 @@
   position: fixed;
   height: 100%;
   width: 15%; /* Set the width as a percentage */
-  background-color: #D9FFCF;
+  background-color: #126912;
   overflow: auto;
   white-space: nowrap;
 }
@@ -56,10 +58,9 @@ main {
 }
 
 .sidebarItems {
- background-color: #D9FFCF;
- color: #0e3b03;
+ color: #ffffff;
  white-space: normal;
- 
+ cursor: pointer;
 }
 
 .sidebarItems:active,
@@ -71,11 +72,13 @@ main {
 
 .sidebarTitle {
   font-size: 200%; /* Adjust the font size as needed */
-  color: #333; /* Set the text color */
-  font-weight: bold; /* Make the text bold */
+  color: #ffffff; /* Set the text color */
   white-space: wrap; /* Prevent text wrapping */
   text-align: center;
   align-items: center;
+  font-size: 1.7rem !important;
+
+
 }
 
 .sidebarItems{
@@ -85,4 +88,14 @@ main {
 .btnReturn{
   width: 30px;
   height: 30px;
+  color: #ffffff;
 }
+
+/* mainLayout_styles.css */
+.mainLayout {
+  position: relative;
+  z-index: 1;
+}
+
+
+

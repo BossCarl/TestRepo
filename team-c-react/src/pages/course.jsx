@@ -46,7 +46,7 @@ function Course() {
                                 <div className="progress-bar bg-success" role="progressbar" style={{ width: '50%' }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div className="space mt-4"></div>
-                            <Link to="/course_sql" className="btn btn-primary bg-success">Start Course</Link>
+                            <Link to="/chapters_sql" className="btn btn-primary bg-success">Start Course</Link>
                         </div>
                         
                         {/* HTML */}
@@ -57,7 +57,7 @@ function Course() {
                                 <div className="progress-bar bg-success" role="progressbar" style={{ width: '25%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div className="space mt-4"></div>
-                            <Link to="/course_hprog" className="btn btn-primary bg-success">Start Course</Link>
+                            <Link to="/chapters_hprog" className="btn btn-primary bg-success">Start Course</Link>
                         </div>
                         
                         {/* SUBVERSION */}
@@ -68,7 +68,7 @@ function Course() {
                                 <div className="progress-bar bg-success" role="progressbar" style={{ width: '10%' }} aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div className="space mt-4"></div>
-                            <Link to="/course_svn" className="btn btn-primary bg-success">Start Course</Link>
+                            <Link to="/chapters_svn" className="btn btn-primary bg-success">Start Course</Link>
                         </div>
                     </div>
                 </div>
