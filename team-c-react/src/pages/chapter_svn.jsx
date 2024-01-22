@@ -27,9 +27,13 @@ function ChapterSvn(){
             <p className="h4 text-white">CHAPTER 3: TITLE OF THE CHAPTER</p>
           </div>
         </div>
+        <Link to='/course' className="buttonReturn " style={{ textDecoration: 'none', color: 'black'}}>
+          <div>
+            <img src="/pics/return1.png" className="btnReturn" alt="return-icon" style={{width: '3rem', height: '3rem'}} />
+              <span className="returnTitle" style={{ marginLeft: '5px' , color: '#126912', fontSize: '1.5rem'}}>Back</span>
+          </div>
+        </Link>
       </div>
-
-
         </>
     )
 }
