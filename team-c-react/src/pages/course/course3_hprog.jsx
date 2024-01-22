@@ -1,11 +1,11 @@
 import { Fragment } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/sidebar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/sidebar.css';
-import '../css/mainLayout_styles.css';
+import '../../css/sidebar.css';
+import '../../css/mainLayout_styles.css';
+import '../../css/sidebar.css';
 
-function CourseSql(){
+function CourseHprog3(){
 
     return (
         <Fragment>
@@ -15,8 +15,8 @@ function CourseSql(){
         {/* Start of Topic Container */}
         <div id="topic0" className="hidden">
           <div className="container">
-            <h1>The SQL Queries</h1>
-            <h4>Introduction to SQL Queries</h4>
+            <h1>HTML Programming</h1>
+            <h4>Introduction to HTML Programming</h4>
             <br />
             <div class="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
               <div class="col-12">
@@ -33,7 +33,7 @@ function CourseSql(){
                   }}
                 >
                   <p className="lh-base">
-                    The "SQL Queries" workshop provides participants with a comprehensive exploration of fundamental concepts related to SQL (Structured Query Language). Delving into syntax, database design, and optimization, the workshop empowers participants with practical skills to proficiently write efficient queries and effectively manage relational databases. The content covers various aspects of SQL, enabling participants to gain a solid understanding of querying techniques and database management principles.
+                  The "HTML Programming" course provides a comprehensive exploration of Hypertext Markup Language (HTML), which stands as the standard language for creating web pages. In this course, participants delve into the fundamental aspects of HTML, understanding how to structure web content using HTML tags. The curriculum covers key topics such as document structure, text formatting, hyperlinks, images, forms, and multimedia integration. Through hands-on exercises and real-world examples, participants gain practical skills in creating well-structured and visually appealing web pages. This course serves as an essential foundation for anyone aspiring to become proficient in web development, ensuring compatibility and accessibility across various browsers.
                   </p>
                 </div>
               </div>
@@ -115,4 +115,4 @@ function CourseSql(){
         </Fragment>
       );
     }
-export default CourseSql;
+export default CourseHprog3;

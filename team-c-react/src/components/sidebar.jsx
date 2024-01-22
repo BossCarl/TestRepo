@@ -10,21 +10,51 @@ let sidebarTitle = '';
 let url = '';
 
 switch (pathname) {
-  case '/course_sql':
-    sidebarTitle = 'The SQL Queries';
+
+  /* CHAPTER 1 */
+  case '/course1_sql':
+    sidebarTitle = 'I: The SQL Queries';
     url = '/chapters_sql';
     break;
-  case '/course_svn':
-    sidebarTitle = 'Subversion Control';
+  case '/course1_svn':
+    sidebarTitle = 'I: Subversion Control';
     url = '/chapters_svn';
     break;
-  case '/course_hprog':
-    sidebarTitle = 'HTML Programming';
+  case '/course1_hprog':
+    sidebarTitle = 'I: HTML Programming';
     url = '/chapters_hprog';
     break;
+
+    /* CHAPTER 2 */
+    case '/course2_sql':
+      sidebarTitle = 'II: The SQL Queries';
+      url = '/chapters_sql';
+      break;
+    case '/course2_svn':
+      sidebarTitle = 'II: Subversion Control';
+      url = '/chapters_svn';
+      break;
+    case '/course2_hprog':
+      sidebarTitle = 'II: HTML Programming';
+      url = '/chapters_hprog';
+      break;
+
+      /* CHAPTER 3 */
+      case '/course3_sql':
+        sidebarTitle = 'III: The SQL Queries';
+        url = '/chapters_sql';
+        break;
+      case '/course3_svn':
+        sidebarTitle = 'III: Subversion Control';
+        url = '/chapters_svn';
+        break;
+      case '/course3_hprog':
+        sidebarTitle = 'III: HTML Programming';
+        url = '/chapters_hprog';
+        break;
   default:
-    sidebarTitle = 'Default Title';
-    url = 'URL DATA'
+    sidebarTitle = '-NO TITLE-';
+    url = '-URL DATA-'
     break;
 }
 

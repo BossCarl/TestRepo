@@ -5,27 +5,31 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function ChapterHprog(){
     return(
-        <> 
+      <> 
       <div className="container mt-5 mx-auto">
-        <h2 className="text-left mb-4">Chapters for HTML Programming</h2><hr/>
+        <h2 className="text-left mb-4">HTML Programming Chapters</h2><hr/>
         <div className="cardChapter card mb-3">
         <div className="card-body d-flex justify-content-between" style={{ backgroundColor: '#126912', borderRadius: '10px' }}>
-      <Link to="/course_hprog" className="h4 text-white" style={{ textDecoration: 'none' }}>
-        CHAPTER 1: TITLE OF THE CHAPTER
-      </Link>
-    </div>
+         <Link to="/course1_hprog" className="h4 text-white" style={{ textDecoration: 'none' }}>
+          CHAPTER 1: TITLE OF THE CHAPTER
+         </Link>
+        </div>
         </div>
 
         <div className="card mb-3" >
-          <div className="card-body d-flex justify-content-between" style={{backgroundColor: '#126912', borderRadius: '10px'}}>
-            <p className="h4 text-white" >CHAPTER 2: TITLE OF THE CHAPTER</p>
-          </div>
+        <div className="card-body d-flex justify-content-between" style={{ backgroundColor: '#126912', borderRadius: '10px' }}>
+         <Link to="/course2_hprog" className="h4 text-white" style={{ textDecoration: 'none' }}>
+          CHAPTER 2: TITLE OF THE CHAPTER
+         </Link>
+        </div>
         </div>
 
         <div className="card mb-3 chapterItemList" >
-          <div className="card-body d-flex justify-content-between" style={{backgroundColor: '#126912', borderRadius: '10px'}}>
-            <p className="h4 text-white">CHAPTER 3: TITLE OF THE CHAPTER</p>
-          </div>
+        <div className="card-body d-flex justify-content-between" style={{ backgroundColor: '#126912', borderRadius: '10px' }}>
+         <Link to="/course3_hprog" className="h4 text-white" style={{ textDecoration: 'none' }}>
+          CHAPTER 3: TITLE OF THE CHAPTER
+         </Link>
+        </div>
         </div>
         <Link to='/course' className="buttonReturn " style={{ textDecoration: 'none', color: 'black'}}>
           <div>

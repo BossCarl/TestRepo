@@ -1,11 +1,11 @@
 import { Fragment } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/sidebar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/sidebar.css';
-import '../css/mainLayout_styles.css';
+import '../../css/sidebar.css';
+import '../../css/mainLayout_styles.css';
+import '../../css/sidebar.css';
 
-function CourseHprog(){
+function CourseSvn1(){
 
     return (
         <Fragment>
@@ -15,8 +15,8 @@ function CourseHprog(){
         {/* Start of Topic Container */}
         <div id="topic0" className="hidden">
           <div className="container">
-            <h1>HTML Programming</h1>
-            <h4>Introduction to HTML Programming</h4>
+            <h1>The Subversion Control</h1>
+            <h4>Introduction to Subversion Control</h4>
             <br />
             <div class="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
               <div class="col-12">
@@ -33,8 +33,8 @@ function CourseHprog(){
                   }}
                 >
                   <p className="lh-base">
-                  The "HTML Programming" course provides a comprehensive exploration of Hypertext Markup Language (HTML), which stands as the standard language for creating web pages. In this course, participants delve into the fundamental aspects of HTML, understanding how to structure web content using HTML tags. The curriculum covers key topics such as document structure, text formatting, hyperlinks, images, forms, and multimedia integration. Through hands-on exercises and real-world examples, participants gain practical skills in creating well-structured and visually appealing web pages. This course serves as an essential foundation for anyone aspiring to become proficient in web development, ensuring compatibility and accessibility across various browsers.
-                  </p>
+                    "The Version Control: SVN" course explores Apache Subversion (SVN), serving as a centralized version control system. SVN plays a crucial role in collaborative software development by enabling version tracking and supporting concurrent work on projects. Throughout the course, participants delve into the essentials of SVN, understanding its centralized architecture and its role in versioning. The curriculum covers topics such as setting up repositories, committing changes, branching, and merging. Participants acquire practical skills in using SVN for efficient version control, allowing them to manage software development projects effectively.
+                    </p>
                 </div>
               </div>
 
@@ -115,4 +115,4 @@ function CourseHprog(){
         </Fragment>
       );
     }
-export default CourseHprog;
+export default CourseSvn1;

@@ -1,11 +1,11 @@
 import { Fragment } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/sidebar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/sidebar.css';
-import '../css/mainLayout_styles.css';
+import '../../css/sidebar.css';
+import '../../css/mainLayout_styles.css';
+import '../../css/sidebar.css';
 
-function CourseSvn(){
+function CourseSvn3(){
 
     return (
         <Fragment>
@@ -115,4 +115,4 @@ function CourseSvn(){
         </Fragment>
       );
     }
-export default CourseSvn;
+export default CourseSvn3;
