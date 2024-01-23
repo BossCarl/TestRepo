@@ -13,13 +13,13 @@ import CourseSvn1 from './pages/course/course1_svn';
 import CourseHprog1 from './pages/course/course1_hprog';
 import CourseSql1 from './pages/course/course1_sql';
 
-import CourseSvn2 from './pages/course/course1_svn';
-import CourseHprog2 from './pages/course/course1_hprog';
-import CourseSql2 from './pages/course/course1_sql';
+import CourseSvn2 from './pages/course/course2_svn';
+import CourseHprog2 from './pages/course/course2_hprog';
+import CourseSql2 from './pages/course/course2_sql';
 
-import CourseSvn3 from './pages/course/course1_svn';
-import CourseHprog3 from './pages/course/course1_hprog';
-import CourseSql3 from './pages/course/course1_sql';
+import CourseSvn3 from './pages/course/course3_svn';
+import CourseHprog3 from './pages/course/course3_hprog';
+import CourseSql3 from './pages/course/course3_sql';
 
 import Sidebar from './components/sidebar';
 import 'bootstrap/dist/js/bootstrap.bundle';

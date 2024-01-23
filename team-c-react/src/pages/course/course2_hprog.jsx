@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../css/sidebar.css';
@@ -6,6 +7,25 @@ import '../../css/mainLayout_styles.css';
 import '../../css/sidebar.css';
 
 function CourseHprog2(){
+  const { pathname } = useLocation();
+  let layoutTitle = '';
+  let subTitle = '';
+  let descText = '';
+  
+  switch (pathname) {
+ 
+    case '/course2_hprog':
+      layoutTitle = 'CHAPTER 3'; 
+      subTitle = 'HTML Tags and its usages.';
+      descText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+      break;
+
+    default:
+      layoutTitle = '-NO TITLE-';
+      subTitle = '-NO SUBTITLE-';
+      descText = '-NO DESCTEXT-';
+      break;
+  }
 
     return (
         <Fragment>
@@ -15,13 +35,13 @@ function CourseHprog2(){
         {/* Start of Topic Container */}
         <div id="topic0" className="hidden">
           <div className="container">
-            <h1>HTML Programming</h1>
-            <h4>Introduction to HTML Programming</h4>
+            <h1>{layoutTitle}</h1>
+            <h4>{subTitle}</h4>
             <br />
-            <div class="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
-              <div class="col-12">
+            <div className="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
+              <div className="col-12">
                 <div
-                  class="rounded-3"
+                  className="rounded-3"
                   style={{
                     fontSize: "18px",
                     color: "#0e3b03",
@@ -32,14 +52,12 @@ function CourseHprog2(){
                     borderColor: "#0e3b03"
                   }}
                 >
-                  <p className="lh-base">
-                  The "HTML Programming" course provides a comprehensive exploration of Hypertext Markup Language (HTML), which stands as the standard language for creating web pages. In this course, participants delve into the fundamental aspects of HTML, understanding how to structure web content using HTML tags. The curriculum covers key topics such as document structure, text formatting, hyperlinks, images, forms, and multimedia integration. Through hands-on exercises and real-world examples, participants gain practical skills in creating well-structured and visually appealing web pages. This course serves as an essential foundation for anyone aspiring to become proficient in web development, ensuring compatibility and accessibility across various browsers.
-                  </p>
+                  <p className="lh-base">{descText}</p>
                 </div>
               </div>
 
               {/*BUTTON TO STUDY TOPIC*/}
-              <div class="col-6 d-flex justify-content-center">
+              <div className="col-6 d-flex justify-content-center">
                 <button
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -55,13 +73,13 @@ function CourseHprog2(){
                  
                   }}
                 >
-                  <img src="/pics/study.png" alt="study" class="zoom"
+                  <img src="/pics/study.png" alt="study" className="zoom"
                    
                   />
                 </button>
               </div>
               {/*BUTTON FOR QUIZ*/}
-              <div class="col-6 d-flex justify-content-center">
+              <div className="col-6 d-flex justify-content-center">
               <button
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -77,7 +95,7 @@ function CourseHprog2(){
                    
                   }}
                 >
-                  <img src="/pics/quizbtn.png" alt="study" class="zoom"
+                  <img src="/pics/quizbtn.png" alt="study" className="zoom"
                  
                   />
                 </button>

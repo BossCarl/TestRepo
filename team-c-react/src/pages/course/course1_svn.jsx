@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../css/sidebar.css';
@@ -6,6 +7,25 @@ import '../../css/mainLayout_styles.css';
 import '../../css/sidebar.css';
 
 function CourseSvn1(){
+  const { pathname } = useLocation();
+  let layoutTitle = '';
+  let subTitle = '';
+  let descText = '';
+  
+  switch (pathname) {
+ 
+    case '/course1_svn':
+      layoutTitle = 'CHAPTER 1';
+      subTitle = 'Introduction to Subversion Cotnrol';
+      descText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+      break;
+      
+    default:
+      layoutTitle = '-NO TITLE-';
+      subTitle = '-NO SUBTTLE-';
+      descText = '-NO DESCTEXT-';
+      break;
+  }
 
     return (
         <Fragment>
@@ -15,13 +35,13 @@ function CourseSvn1(){
         {/* Start of Topic Container */}
         <div id="topic0" className="hidden">
           <div className="container">
-            <h1>The Subversion Control</h1>
-            <h4>Introduction to Subversion Control</h4>
+            <h1>{layoutTitle}</h1>
+            <h4>{subTitle}</h4>
             <br />
-            <div class="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
-              <div class="col-12">
+            <div className="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
+              <div className="col-12">
                 <div
-                  class="rounded-3"
+                  className="rounded-3"
                   style={{
                     fontSize: "18px",
                     color: "#0e3b03",
@@ -32,14 +52,12 @@ function CourseSvn1(){
                     borderColor: "#0e3b03"
                   }}
                 >
-                  <p className="lh-base">
-                    "The Version Control: SVN" course explores Apache Subversion (SVN), serving as a centralized version control system. SVN plays a crucial role in collaborative software development by enabling version tracking and supporting concurrent work on projects. Throughout the course, participants delve into the essentials of SVN, understanding its centralized architecture and its role in versioning. The curriculum covers topics such as setting up repositories, committing changes, branching, and merging. Participants acquire practical skills in using SVN for efficient version control, allowing them to manage software development projects effectively.
-                    </p>
+                  <p className="lh-base">{descText}</p>
                 </div>
               </div>
 
               {/*BUTTON TO STUDY TOPIC*/}
-              <div class="col-6 d-flex justify-content-center">
+              <div className="col-6 d-flex justify-content-center">
                 <button
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -55,13 +73,13 @@ function CourseSvn1(){
                  
                   }}
                 >
-                  <img src="/pics/study.png" alt="study" class="zoom"
+                  <img src="/pics/study.png" alt="study" className="zoom"
                    
                   />
                 </button>
               </div>
               {/*BUTTON FOR QUIZ*/}
-              <div class="col-6 d-flex justify-content-center">
+              <div className="col-6 d-flex justify-content-center">
               <button
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -77,7 +95,7 @@ function CourseSvn1(){
                    
                   }}
                 >
-                  <img src="/pics/quizbtn.png" alt="study" class="zoom"
+                  <img src="/pics/quizbtn.png" alt="study" className="zoom"
                  
                   />
                 </button>

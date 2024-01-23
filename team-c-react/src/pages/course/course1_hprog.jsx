@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../css/sidebar.css';
@@ -6,6 +7,23 @@ import '../../css/mainLayout_styles.css';
 import '../../css/sidebar.css';
 
 function CourseHprog1(){
+  const { pathname } = useLocation();
+  let layoutTitle = '';
+  let subTitle = '';
+  let descText = '';
+  
+  switch (pathname) {
+ 
+    case '/course1_hprog':
+      layoutTitle = 'CHAPTER 1';
+      subTitle = 'Introduction to HTML Programming';
+      break;
+
+    default:
+      layoutTitle = '-NO TITLE-';
+      subTitle = '-NO SUBTITLE-';
+      break;
+  }
 
     return (
         <Fragment>
@@ -15,13 +33,13 @@ function CourseHprog1(){
         {/* Start of Topic Container */}
         <div id="topic0" className="hidden">
           <div className="container">
-            <h1>HTML Programming</h1>
-            <h4>Introduction to HTML Programming</h4>
+            <h1>{layoutTitle}</h1>
+            <h4>{subTitle}</h4>
             <br />
-            <div class="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
-              <div class="col-12">
+            <div className="row gy-5" style={{ backgroundColor: "#EBFFE5" }}>
+              <div className="col-12">
                 <div
-                  class="rounded-3"
+                  className="rounded-3"
                   style={{
                     fontSize: "18px",
                     color: "#0e3b03",
@@ -39,7 +57,7 @@ function CourseHprog1(){
               </div>
 
               {/*BUTTON TO STUDY TOPIC*/}
-              <div class="col-6 d-flex justify-content-center">
+              <div className="col-6 d-flex justify-content-center">
                 <button
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -55,13 +73,13 @@ function CourseHprog1(){
                  
                   }}
                 >
-                  <img src="/pics/study.png" alt="study" class="zoom"
+                  <img src="/pics/study.png" alt="study" className="zoom"
                    
                   />
                 </button>
               </div>
               {/*BUTTON FOR QUIZ*/}
-              <div class="col-6 d-flex justify-content-center">
+              <div className="col-6 d-flex justify-content-center">
               <button
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -77,7 +95,7 @@ function CourseHprog1(){
                    
                   }}
                 >
-                  <img src="/pics/quizbtn.png" alt="study" class="zoom"
+                  <img src="/pics/quizbtn.png" alt="study" className="zoom"
                  
                   />
                 </button>
