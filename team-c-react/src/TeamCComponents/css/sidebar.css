@@ -52,10 +52,7 @@ main {
   margin-top: 58px; /* MOVE CONTENT TO-LEFT */
 }
 
-.returnButton {
-  width: 30px;
-  height: 30px;
-}
+
 
 .sidebarItems {
  color: #ffffff;
@@ -85,17 +82,28 @@ main {
   text-align: center;
 }
 
-.btnReturn{
-  width: 30px;
-  height: 30px;
-  color: #ffffff;
-}
-
 /* mainLayout_styles.css */
 .mainLayout {
   position: relative;
   z-index: 1;
 }
+
+.btnReturn{
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  transition: transform .1s; /* Animation */
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.btnReturn:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+
 
 
 

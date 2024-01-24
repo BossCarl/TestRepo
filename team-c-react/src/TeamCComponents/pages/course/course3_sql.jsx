@@ -56,7 +56,7 @@ function CourseSql3(){
                   <p className="lh-base">{descText}</p>
                 </div>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end" style={{margin: '10px'}}>
-                <button class="btn btn-primary" 
+                <button class="btn btn-primary courseButton" 
                 data-bs-toggle="modal" 
                 data-bs-target="#mainId" 
                 className="btn" 
@@ -67,7 +67,7 @@ function CourseSql3(){
                 }}
                 >Go to quiz</button>
 
-                <button class="btn btn-primary" 
+                <button class="btn btn-primary courseButton" 
                 data-bs-toggle="modal" 
                 data-bs-target="#subId" 
                 className="btn" 
