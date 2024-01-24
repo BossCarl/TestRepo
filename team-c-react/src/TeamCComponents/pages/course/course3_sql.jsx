@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../css/sidebar.css';
-import '../../css/mainLayout_styles.css';
 
 function TeamC_CourseSql3(){
   const { pathname } = useLocation();
@@ -32,9 +31,9 @@ function TeamC_CourseSql3(){
         <Fragment>
           <div id="layoutContainer">
           {/* Main layout */}
-      <main className="mainLayout">
+      <main className="c_chapcourse_mainlayout">
         {/* Start of Topic Container */}
-        <div id="topic0" className="hidden">
+        <div id="topic0" className="c_chapcourse_hidden">
           <div className="container">
             <h1>{layoutTitle}</h1>
             <h4>{subTitle}</h4>

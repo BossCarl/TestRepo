@@ -8,7 +8,7 @@ function showNextTopic(topicNumber) {
   // Show the selected topic
   let topicElement = document.getElementById('topic' + topicNumber);
   if (topicElement) {
-    topicElement.classList.remove('hidden');
+    topicElement.classList.remove('c_chapcourse_hidden');
   }
 }
 

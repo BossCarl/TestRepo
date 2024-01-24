@@ -1,94 +1,65 @@
-
-
 /* Sidebar styles */
-.sidebar {
+.c_sidebar_main {
   bottom: 0; /* FOR PULLING THE SIDEBAR DOWNWARDS */
   padding: 70px 0 0; /* FOR SIDEBAR HEIGHT */
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 50%), 0 5px 15px 0 rgb(0 0 0 / 30%); /* FOR SHADOW EFFECT */
   overflow-y: auto; /* OVERFLOW PROPERTY TO WRAP LONG TEXTS */
   position: fixed;
   z-index: 1; /* Ensure this value is higher than the z-index of mainLayout */
-  /* ... other styles for the sidebar */
+  height: 100%;
+  width: 15%; /* Set the width as a percentage */
+  background-color: #126912;
+  white-space: nowrap;
 }
 
 @media (max-width: 991.98px) {  
-  .sidebar {
+  .c_sidebar_main {
     width: 100%; /* FULL WIDTH FOR SMALLER SCREENS */
   }
 }
 
-.sidebar .active {
+.c_sidebar_main .active {
   border-radius: 5px;
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: 100%; /* Adjusted height to 100% of parent container's height */
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-}
-
-#sidebarMenu {
-  z-index: -1; /* Adjust the z-index to a lower value */
-  position: fixed;
-  height: 100%;
-  width: 15%; /* Set the width as a percentage */
-  background-color: #126912;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-
-/* HIDES CONTENT WHEN USER HAS NOT CLICKED ANYTHING YET */
-.hidden {
+/* RESPONSIBLE FOR HIDING MAIN-LAYOUT WHEN USER HAS NOT CLICKED ANYTHING YET */
+.c_chapcourse_hidden {
   display: none !important;
 }
 
-main {
-  margin-left: 20%; /* MOVE CONTENT TO-RIGHT */
-  margin-top: 58px; /* MOVE CONTENT TO-LEFT */
-}
-
-
-
-.sidebarItems {
+.c_sidebar_sidebaritems.sidebarItems {
  color: #ffffff;
  white-space: normal;
  cursor: pointer;
+ text-align: center;
 }
 
-.sidebarItems:active,
-.sidebarItems:focus,
-.sidebarItems:hover {
+.c_sidebar_sidebaritems.sidebarItems:active,
+.c_sidebar_sidebaritems.sidebarItems:focus,
+.c_sidebar_sidebaritems.sidebarItems:hover {
   color: #0e3b03;
 }
 
-
-.sidebarTitle {
+.c_sidebar_sidebarTitle {
   font-size: 200%; /* Adjust the font size as needed */
   color: #ffffff; /* Set the text color */
   white-space: wrap; /* Prevent text wrapping */
   text-align: center;
   align-items: center;
   font-size: 1.7rem !important;
-
-
-}
-
-.sidebarItems{
-  text-align: center;
 }
 
 /* mainLayout_styles.css */
-.mainLayout {
+.c_chapcourse_mainlayout {
   position: relative;
   z-index: 1;
+  margin-left: 20%; /* MOVE CONTENT TO-RIGHT */
+  margin-top: 5%; /* MOVE CONTENT TO-BOTTOM */ 
+  margin-right: 5%;/* MOVE CONTENT TO-LEFT */
 }
 
-.btnReturn{
+.c_sidebar_btnReturn{
   width: 30px;
   height: 30px;
   color: #ffffff;
@@ -97,7 +68,7 @@ main {
   margin: 0 auto;
 }
 
-.btnReturn:hover {
+.c_sidebar_btnReturn:hover {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 

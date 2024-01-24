@@ -9,10 +9,10 @@ function TeamC_Dashboard() {
   return (
     <Fragment>
       {/* Header title */}
-      <div className="header p-3 h-50 d-flex align-items-center justify-content-center">
-        <div className="title p-3 text-center">
-          <div className="jap-char">
-            <h1 className="fw-bold">月伝で自分のやり方を学びましょう。</h1>
+      <div className="c_dashboard_header header p-3 h-50 d-flex align-items-center justify-content-center">
+        <div className="c_dashboard_title title p-3 text-center">
+          <div className="c_dashboard_japchar jap-char">
+            <h1 className="c_dashboard_char fw-bold">月伝で自分のやり方を学びましょう。</h1>
           </div>
           <div className="eng-char">
             <h4>Learn your way at Tsukiden.</h4>
