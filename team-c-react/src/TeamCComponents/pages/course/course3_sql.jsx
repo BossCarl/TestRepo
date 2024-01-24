@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../css/sidebar.css';
 import '../../css/mainLayout_styles.css';
 
-function CourseSql3(){
+function TeamC_CourseSql3(){
   const { pathname } = useLocation();
   let layoutTitle = '';
   let subTitle = '';
@@ -98,7 +98,7 @@ function CourseSql3(){
           <p>You will be redirected to Google Form's website. Please keep your notes and answer the Quiz honestly.</p><p>Good luck trainee!</p>
           </div>
           <div className="modal-footer">
-            <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={() => window.open('https://www.google.com', '_blank')} style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px'}}>Yes</button>
+            <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfGvPLw2J2VcIm1L5IAjkHi63Bo0iTSAutMbc7Ml_I6J6gl_A/viewform', '_blank')} style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px'}}>Yes</button>
             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px' }}>Cancel</button>
             
           </div>
@@ -129,4 +129,4 @@ function CourseSql3(){
         </Fragment>
       );
     }
-export default CourseSql3;
+export default TeamC_CourseSql3;

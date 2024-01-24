@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function Assessments() {
+function TeamC_Assessments() {
   return (
     <Fragment>
       <div className="container mt-5 mx-auto">
@@ -37,4 +37,4 @@ function Assessments() {
   )
 }
 
-export default Assessments;
+export default TeamC_Assessments;

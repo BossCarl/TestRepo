@@ -5,11 +5,7 @@ import { enroll } from '../js/script';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/dashboard_page.css';
 
-
-
-
-
-function Dashboard() {
+function TeamC_Dashboard() {
   return (
     <Fragment>
       {/* Header title */}
@@ -274,14 +270,16 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      {/* End of Modals */}
+      <div className='footerContainer d-flex flex-column align-items-center' style={{ color: '#0e3b03', minHeight: '1vh' }}>
+  <div className='flex-grow-1'></div>
+  <p className='footerText text-center'>All Rights Reserved | Copyright © 2024</p>
+</div>
 
-      {/* Bootstrap with Popper */}
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossOrigin="anonymous"></script>
+
+
+      {/* End of Modals */}
     </Fragment>
   );
 }
 
-export default Dashboard;
+export default TeamC_Dashboard;

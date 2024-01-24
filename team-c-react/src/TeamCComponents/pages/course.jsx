@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import '../css/course_page.css';
 
-function Course() {
+function TeamC_Course() {
     return (
         <Fragment>
             {/* Header title */}
@@ -75,8 +75,9 @@ function Course() {
                     </div>
                 </div>
             </div>
+            
         </Fragment>
     );
 }
 
-export default Course;
+export default TeamC_Course;

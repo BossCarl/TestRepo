@@ -8,7 +8,7 @@ import '../../css/sidebar.css';
 import '../../css/mainLayout_styles.css';
 
 
-function CourseSvn2(){
+function TeamC_CourseSvn2(){
   const { pathname } = useLocation();
   let layoutTitle = '';
   let subTitle = '';
@@ -130,4 +130,4 @@ function CourseSvn2(){
         </Fragment>
       );
     }
-export default CourseSvn2;
+export default TeamC_CourseSvn2;

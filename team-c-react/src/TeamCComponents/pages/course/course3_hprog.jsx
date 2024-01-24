@@ -8,7 +8,7 @@ import '../../css/sidebar.css';
 import '../../css/mainLayout_styles.css';
 
 
-function CourseHprog3(){
+function TeamC_CourseHprog3(){
   const { pathname } = useLocation();
   let layoutTitle = '';
   let subTitle = '';
@@ -99,7 +99,7 @@ function CourseHprog3(){
           <p>You will be redirected to Google Form's website. Please keep your notes and answer the Quiz honestly.</p><p>Good luck trainee!</p>
           </div>
           <div className="modal-footer">
-            <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={() => window.open('https://www.google.com', '_blank')} style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px'}}>Yes</button>
+            <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdHPKiD4s0-1kU53laRQKZMLoKUpF6LREjwURejtW6EghmdAg/viewform', '_blank')} style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px'}}>Yes</button>
             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px' }}>Cancel</button>
             
           </div>
@@ -130,4 +130,4 @@ function CourseHprog3(){
         </Fragment>
       );
     }
-export default CourseHprog3;
+export default TeamC_CourseHprog3;

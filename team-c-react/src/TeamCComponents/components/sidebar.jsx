@@ -5,7 +5,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-function Sidebar() {
+function TeamC_Sidebar() {
     const { pathname } = useLocation();
 let sidebarTitle = '';
 let url = '';
@@ -88,4 +88,4 @@ switch (pathname) {
     )
 }
 
-export default Sidebar;
+export default TeamC_Sidebar;

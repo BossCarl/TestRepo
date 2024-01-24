@@ -8,7 +8,7 @@ import 'popper.js/dist/umd/popper.min.js';
 
 import '../css/navbar.css';  // Import your custom CSS file here
 
-export default function CustomNavbar() {
+ function TeamC_Navbar() {
 
   return (
     <Navbar expand="lg" variant="light" style={{ backgroundColor: '#D9FFCF' }}>
@@ -45,3 +45,5 @@ export default function CustomNavbar() {
     </Navbar>
   );
 }
+
+export default TeamC_Navbar;

@@ -8,7 +8,7 @@ import '../../css/sidebar.css';
 import '../../css/mainLayout_styles.css';
 
 
-function CourseSql2(){
+function TeamC_CourseSql2(){
   const { pathname } = useLocation();
   let layoutTitle = '';
   let subTitle = '';
@@ -99,7 +99,7 @@ function CourseSql2(){
           <p>You will be redirected to Google Form's website. Please keep your notes and answer the Quiz honestly.</p><p>Good luck trainee!</p>
           </div>
           <div className="modal-footer">
-            <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={() => window.open('https://www.google.com', '_blank')} style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px'}}>Yes</button>
+            <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScQmjlD1p6OsJ1ydvPXjfHtj1wreqU2_3Pn1wfEdQyFD1lUCA/viewform', '_blank')} style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px'}}>Yes</button>
             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" style={{backgroundColor: '#0e3b03', color: '#ffffff', borderRadius: '20px', fontSize: '15px', width: '100px' }}>Cancel</button>
             
           </div>
@@ -130,4 +130,4 @@ function CourseSql2(){
         </Fragment>
       );
     }
-export default CourseSql2;
+export default TeamC_CourseSql2;
