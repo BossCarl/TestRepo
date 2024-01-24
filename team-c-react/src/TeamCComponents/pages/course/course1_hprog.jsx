@@ -1,12 +1,14 @@
 import { Fragment } from "react";
 import { useLocation } from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../../css/sidebar.css';
 import '../../css/mainLayout_styles.css';
-import '../../css/sidebar.css';
 
-function CourseHprog3(){
+
+function CourseHprog1(){
   const { pathname } = useLocation();
   let layoutTitle = '';
   let subTitle = '';
@@ -14,12 +16,12 @@ function CourseHprog3(){
   
   switch (pathname) {
  
-    case '/course3_hprog':
-      layoutTitle = 'CHAPTER 3';
-      subTitle = 'HTML Programming and its history.';
+    case '/course1_hprog':
+      layoutTitle = 'CHAPTER 1'; 
+      subTitle = 'Introduction to HTML Programming';
       descText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
       break;
-      
+
     default:
       layoutTitle = '-NO TITLE-';
       subTitle = '-NO SUBTITLE-';
@@ -128,4 +130,4 @@ function CourseHprog3(){
         </Fragment>
       );
     }
-export default CourseHprog3;
+export default CourseHprog1;

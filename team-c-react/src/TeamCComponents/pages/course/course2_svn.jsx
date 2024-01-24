@@ -1,12 +1,14 @@
 import { Fragment } from "react";
 import { useLocation } from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../../css/sidebar.css';
 import '../../css/mainLayout_styles.css';
-import '../../css/sidebar.css';
 
-function CourseSql1(){
+
+function CourseSvn2(){
   const { pathname } = useLocation();
   let layoutTitle = '';
   let subTitle = '';
@@ -14,9 +16,9 @@ function CourseSql1(){
   
   switch (pathname) {
  
-    case '/course1_sql':
-      layoutTitle = 'CHAPTER 1';
-      subTitle = 'Introduction to SQL Query';
+    case '/course2_svn':
+      layoutTitle = 'CHAPTER 3';
+      subTitle = 'Subversion Control commands and their usages.';
       descText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
       break;
       
@@ -123,7 +125,9 @@ function CourseSql1(){
         </div>
       </div>
     </div>
+    
+
         </Fragment>
       );
     }
-export default CourseSql1;
+export default CourseSvn2;

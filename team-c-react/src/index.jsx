@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap';
-import './css/base_style.css';
+import '../src/TeamCComponents/pages/';
 
 import { BrowserRouter } from 'react-router-dom';
 

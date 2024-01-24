@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import { enroll } from '../js/script';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/dashboard_page.css';
 
-import { enroll } from '../js/script';
-import '../css/dashboard_page.css'
+
+
 
 
 function Dashboard() {

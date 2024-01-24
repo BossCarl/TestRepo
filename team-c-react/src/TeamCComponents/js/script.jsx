@@ -1,4 +1,3 @@
-// Import statements
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Function to show the next topic

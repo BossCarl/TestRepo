@@ -1,8 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
+import { showNextTopic } from "../js/script";
+
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { showNextTopic } from "../js/script";
 
 function Sidebar() {
     const { pathname } = useLocation();

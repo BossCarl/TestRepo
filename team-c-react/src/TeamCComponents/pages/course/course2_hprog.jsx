@@ -1,12 +1,14 @@
 import { Fragment } from "react";
 import { useLocation } from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../../css/sidebar.css';
 import '../../css/mainLayout_styles.css';
-import '../../css/sidebar.css';
 
-function CourseSql2(){
+
+function CourseHprog2(){
   const { pathname } = useLocation();
   let layoutTitle = '';
   let subTitle = '';
@@ -14,16 +16,16 @@ function CourseSql2(){
   
   switch (pathname) {
  
-    case '/course2_sql':
-      layoutTitle = 'CHAPTER 2';
-      subTitle = 'SQL Commands and its usages.';
+    case '/course2_hprog':
+      layoutTitle = 'CHAPTER 2'; 
+      subTitle = 'HTML Tags and its usages.';
       descText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
       break;
-      
+
     default:
       layoutTitle = '-NO TITLE-';
-      subTitle = '-NO SUBTITLE-'
-      descText = '-NO DESCTEXT-'
+      subTitle = '-NO SUBTITLE-';
+      descText = '-NO DESCTEXT-';
       break;
   }
 
@@ -128,4 +130,4 @@ function CourseSql2(){
         </Fragment>
       );
     }
-export default CourseSql2;
+export default CourseHprog2;

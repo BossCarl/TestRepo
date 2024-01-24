@@ -1,12 +1,14 @@
 import { Fragment } from "react";
 import { useLocation } from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../../css/sidebar.css';
 import '../../css/mainLayout_styles.css';
-import '../../css/sidebar.css';
 
-function CourseHprog2(){
+
+function CourseSvn1(){
   const { pathname } = useLocation();
   let layoutTitle = '';
   let subTitle = '';
@@ -14,15 +16,15 @@ function CourseHprog2(){
   
   switch (pathname) {
  
-    case '/course2_hprog':
-      layoutTitle = 'CHAPTER 2'; 
-      subTitle = 'HTML Tags and its usages.';
+    case '/course1_svn':
+      layoutTitle = 'CHAPTER 1';
+      subTitle = 'Introduction to Subversion Cotnrol';
       descText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
       break;
-
+      
     default:
       layoutTitle = '-NO TITLE-';
-      subTitle = '-NO SUBTITLE-';
+      subTitle = '-NO SUBTTLE-';
       descText = '-NO DESCTEXT-';
       break;
   }
@@ -123,9 +125,7 @@ function CourseHprog2(){
         </div>
       </div>
     </div>
-    
-
         </Fragment>
       );
     }
-export default CourseHprog2;
+export default CourseSvn1;

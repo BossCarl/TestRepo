@@ -1,12 +1,14 @@
 import { Fragment } from "react";
 import { useLocation } from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../../css/sidebar.css';
 import '../../css/mainLayout_styles.css';
-import '../../css/sidebar.css';
 
-function CourseSvn3(){
+
+function CourseSql2(){
   const { pathname } = useLocation();
   let layoutTitle = '';
   let subTitle = '';
@@ -14,16 +16,16 @@ function CourseSvn3(){
   
   switch (pathname) {
  
-    case '/course3_svn':
-      layoutTitle = 'CHAPTER 3';
-      subTitle = 'Subversion Control and its history.';
-      descText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    case '/course2_sql':
+      layoutTitle = 'CHAPTER 2';
+      subTitle = 'SQL Commands and its usages.';
+      descText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
       break;
       
     default:
       layoutTitle = '-NO TITLE-';
-      subTitle = '-NO SUBTITLE-';
-      descText = '-NO DESCTEXT-';
+      subTitle = '-NO SUBTITLE-'
+      descText = '-NO DESCTEXT-'
       break;
   }
 
@@ -123,8 +125,9 @@ function CourseSvn3(){
         </div>
       </div>
     </div>
+    
 
         </Fragment>
       );
     }
-export default CourseSvn3;
+export default CourseSql2;
