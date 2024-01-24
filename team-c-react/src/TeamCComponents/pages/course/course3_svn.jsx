@@ -59,7 +59,6 @@ function TeamC_CourseSvn3(){
                 <button className="btn btn-primary courseButton" 
                 data-bs-toggle="modal" 
                 data-bs-target="#mainId" 
-                className="btn" 
                 type="button"
                 style={{backgroundColor: '#D9FFCF',
                 borderColor: "0E3B03",
@@ -69,9 +68,7 @@ function TeamC_CourseSvn3(){
 
                 <button className="btn btn-primary courseButton" 
                 data-bs-toggle="modal" 
-                data-bs-target="#subId" 
-                className="btn" 
-                type="button"
+                data-bs-target="#subId"
                 style={{backgroundColor: '#0E3B03', 
                 color: 'white',
                 boxShadow: '0 2px 5px 0 rgb(0 0 0 / 25%), 0 5px 5px 0 rgb(0 0 0 / 30%)'

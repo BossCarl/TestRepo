@@ -59,7 +59,6 @@ function TeamC_CourseSql1(){
                 <button className="btn btn-primary courseButton" 
                 data-bs-toggle="modal" 
                 data-bs-target="#mainId" 
-                className="btn" 
                 type="button"
                 style={{backgroundColor: '#D9FFCF',
                 borderColor: "0E3B03",
@@ -69,8 +68,7 @@ function TeamC_CourseSql1(){
 
                 <button className="btn btn-primary courseButton" 
                 data-bs-toggle="modal" 
-                data-bs-target="#subId" 
-                className="btn" 
+                data-bs-target="#subId"
                 type="button"
                 style={{backgroundColor: '#0E3B03', 
                 color: 'white',

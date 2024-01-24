@@ -57,8 +57,7 @@ function TeamC_CourseSql3(){
                 <div className="d-grid gap-2 d-md-flex justify-content-md-end" style={{margin: '10px'}}>
                 <button className="btn btn-primary courseButton" 
                 data-bs-toggle="modal" 
-                data-bs-target="#mainId" 
-                className="btn" 
+                data-bs-target="#mainId"
                 type="button"
                 style={{backgroundColor: '#D9FFCF',
                 borderColor: "0E3B03",
@@ -69,7 +68,6 @@ function TeamC_CourseSql3(){
                 <button className="btn btn-primary courseButton" 
                 data-bs-toggle="modal" 
                 data-bs-target="#subId" 
-                className="btn" 
                 type="button"
                 style={{backgroundColor: '#0E3B03', 
                 color: 'white',
