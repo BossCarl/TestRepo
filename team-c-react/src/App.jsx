@@ -1,27 +1,27 @@
 /* MODULES & COMPONENTS */
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Dashboard from './TeamCComponents/pages/dashboard';
-import Course from './TeamCComponents/pages/course';
-import Navbar from './TeamCComponents/components/navbar';
-import Assessments from './TeamCComponents/pages/assessment';
-import Sidebar from './TeamCComponents/components/sidebar';
+import Dashboard from '../src/TeamCComponents/pages/dashboard';
+import Course from '../src/TeamCComponents/pages/course';
+import Navbar from '../src/TeamCComponents/components/navbar';
+import Assessments from '../src/TeamCComponents/pages/assessment';
+import Sidebar from '../src/TeamCComponents/components/sidebar';
 /* COURSE LISTS */
-import ChapterSvn from './TeamCComponents/pages/chapter_svn';
-import ChapterSql from './TeamCComponents/pages/chapter_sql';
-import ChapterHprog from './TeamCComponents/pages/chapter_hprog';
+import ChapterSvn from '../src/TeamCComponents/pages/chapter_svn';
+import ChapterSql from '../src/TeamCComponents/pages/chapter_sql';
+import ChapterHprog from '../src/TeamCComponents/pages/chapter_hprog';
 /* CHAPTER 1 */
-import CourseSvn1 from './TeamCComponents/pages/course/course1_svn';
-import CourseHprog1 from './TeamCComponents/pages/course/course1_hprog';
-import CourseSql1 from './TeamCComponents/pages/course/course1_sql';
+import CourseSvn1 from '../src/TeamCComponents/pages/course/course1_svn';
+import CourseHprog1 from '../src/TeamCComponents/pages/course/course1_hprog';
+import CourseSql1 from '../src/TeamCComponents/pages/course/course1_sql';
 /* CHAPTER 2 */
-import CourseSvn2 from './TeamCComponents/pages/course/course2_svn';
-import CourseHprog2 from './TeamCComponents/pages/course/course2_hprog';
-import CourseSql2 from './TeamCComponents/pages/course/course2_sql';
+import CourseSvn2 from '../src/TeamCComponents/pages/course/course2_svn';
+import CourseHprog2 from '../src/TeamCComponents/pages/course/course2_hprog';
+import CourseSql2 from '../src/TeamCComponents/pages/course/course2_sql';
 /* CHAPTER 3 */
-import CourseSvn3 from './TeamCComponents/pages/course/course3_svn';
-import CourseHprog3 from './TeamCComponents/pages/course/course3_hprog';
-import CourseSql3 from './TeamCComponents/pages/course/course3_sql';
+import CourseSvn3 from '../src/TeamCComponents/pages/course/course3_svn';
+import CourseHprog3 from '../src/TeamCComponents/pages/course/course3_hprog';
+import CourseSql3 from '../src/TeamCComponents/pages/course/course3_sql';
 /* OTHERS */
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
