@@ -56,17 +56,16 @@ function TeamC_CourseHprog1(){
                   <p className="lh-base">{descText}</p>
                 </div>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-end" style={{margin: '10px'}}>
-                <button className="btn btn-primary courseButton" 
+                <button className="btn courseButton" 
                 data-bs-toggle="modal" 
                 data-bs-target="#mainId" 
                 type="button"
                 style={{backgroundColor: '#D9FFCF',
-                borderColor: "0E3B03",
-                boxShadow: '0 2px 5px 0 rgb(0 0 0 / 25%), 0 5px 5px 0 rgb(0 0 0 / 30%)'
+                boxShadow: '0 2px 5px 0 rgb(0 0 0 / 25%), 0 5px 5px 0 rgb(0 0 0 / 30%)',
                 }}
                 >Go to quiz</button>
 
-                <button className="btn btn-primary courseButton" 
+                <button className="btn courseButton" 
                 data-bs-toggle="modal" 
                 data-bs-target="#subId"
                 type="button"

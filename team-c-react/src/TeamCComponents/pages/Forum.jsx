@@ -42,18 +42,18 @@ const TeamC_Forum = () => {
     
         // Create a new discussion card
         var newDiscussionCard = document.createElement("div");
-        newDiscussionCard.className = "card row-hover pos-relative py-3 px-3 mb-3 border-top-0 border-right-0 border-bottom-0 rounded-0 discussion-container";
+        newDiscussionCard.className = "c_forum_newdiscussioncard card row-hover pos-relative py-3 px-3 mb-3 border-top-0 border-right-0 border-bottom-0 rounded-0 discussion-container c_forum_discussioncontainer";
         
         var cardContent = `
             <div class="row align-items-center">
                 <div class="col-md-8 mb-3 mb-sm-0">
-                    <h5><a href="#" class="text-primary" id="discussionTitle_${Date.now()}">${discussionTitle}</a></h5>
-                    <p class="text-sm"><span class="op-6">Posted by</span> <a class="text-black" href="#">Your Name</a></p>
+                    <h5><a href="#" class="c_forum_discussiontext text-primary c_forum_posttitle" id="discussionTitle_${Date.now()}">${discussionTitle}</a></h5>
+                    <p class="text-sm"><span class="op-6">Posted by</span> <a class="c_forum_discussiontext text-black" href="#">Your Name</a></p>
                 </div>
                 <div class="col-md-4 op-7 d-flex justify-content-end align-items-center">
                     <div class="row text-center op-3">
                         <div class="col px-5"> 
-                            <a class="ion-ios-chatboxes-outline icon-1x" href="#"></a> 
+                            <a class="ion-ios-chatboxes-outline icon-1x c_forum_iconchatbox" href="#"></a> 
                             <span class="d-block text-sm">0 replies</span> 
                         </div>
                     </div>
@@ -140,13 +140,13 @@ const TeamC_Forum = () => {
                 <div className="col-lg-9 mb-3">
                   <div className="row text-left mb-5">
                     <div className="col-lg-6">
-                      <button className="btn btn-lg btn-success rounded-5 py-2 px-4 mb-3 bg-op-6 roboto-bold" onClick={toggleDiscussionForm}>
+                      <button className="c_forum_successdiscussion btn btn-lg btn-success rounded-5 py-2 px-4 mb-3 bg-op-6 roboto-bold" onClick={toggleDiscussionForm}>
                         Add discussion
                       </button>
                     </div>
                     <div className="col-lg-6">
                       <div className="input-group">
-                        <input type="text" className="form-control form-control-lg search-bar" id="searchDiscussion" placeholder="Search topic..." onChange={(e) => setSearchTerm(e.target.value)} />
+                        <input type="text" className="form-control form-control-lg search-bar c_forum_searchbar" id="searchDiscussion" placeholder="Search topic..." onChange={(e) => setSearchTerm(e.target.value)} />
                         <button className="btn btn-outline-success" type="button" onClick={searchDiscussions} disabled={isSearchButtonDisabled}>
                           <i className="ion-ios-search"></i>
                         </button>
@@ -154,7 +154,7 @@ const TeamC_Forum = () => {
                     </div>
                   </div>
                   {showDiscussionForm && (
-                    <div id="discussionForm">
+                    <div id="c_forum_discussionForm">
                       <form>
                         <div className="form-group">
                           <label htmlFor="discussionTitle">Discussion Title</label>
@@ -162,7 +162,7 @@ const TeamC_Forum = () => {
                         </div>
                         <div className="form-group">
                           <label htmlFor="discussionContent">Discussion Content</label>
-                          <textarea className="form-control" id="discussionContent" rows="3" placeholder="Enter discussion content" onChange={(e) => setDiscussionContent(e.target.value)} />
+                          <textarea className="form-control" id="c_forum_discussionContent" rows="3" placeholder="Enter discussion content" onChange={(e) => setDiscussionContent(e.target.value)} />
                         </div>
                         <div className="d-md-flex justify-content-md-end">
                           <button type="button" className="btn btn-success" onClick={postDiscussion} style={{ marginTop: '10px', paddingLeft: '11px' }}>
@@ -176,8 +176,8 @@ const TeamC_Forum = () => {
                 <div id="discussionPosts">
                   {discussionPosts.map(post => (
                     <div key={post.id} style={{ display: post.display ? 'block' : 'none' }}>
-                      <h5><a href={`/Discussion/${post.title}`} className="text-primary">{post.title}</a></h5>
-                      <p className="text-sm"><span className="op-6">Posted by</span> <a className="text-black" href="#">Your Name</a></p>
+                      <h5><a href={`/discussion/${post.title}`} className="c_forum_discssiontext text-primary">{post.title}</a></h5>
+                      <p className="text-sm"><span className="op-6">Posted by</span> <a className="c_forum_discussiontext text-black" href="#">Your Name</a></p>
                     </div>
                   ))}
                 </div>
@@ -186,7 +186,7 @@ const TeamC_Forum = () => {
           </div>
           <div className="modal fade top-right" id="niceModal" tabIndex="-1" aria-labelledby="niceModalLabel" aria-hidden="true">
             <div className="modal-dialog">
-              <div className="modal-content">
+              <div className="c_forum_modalcont modal-content">
                 <div className="modal-body">Discussion posted!</div>
               </div>
             </div>

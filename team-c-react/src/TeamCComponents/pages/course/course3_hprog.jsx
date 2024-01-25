@@ -56,7 +56,7 @@ function TeamC_CourseHprog3(){
                   <p className="lh-base">{descText}</p>
                 </div>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-end" style={{margin: '10px'}}>
-                <button className="btn btn-primary courseButton" 
+                <button className="btn  courseButton" 
                 data-bs-toggle="modal" 
                 data-bs-target="#mainId" 
                 type="button"
@@ -66,7 +66,7 @@ function TeamC_CourseHprog3(){
                 }}
                 >Go to quiz</button>
 
-                <button className="btn btn-primary courseButton" 
+                <button className="btn  courseButton" 
                 data-bs-toggle="modal" 
                 data-bs-target="#subId" 
                 type="button"
