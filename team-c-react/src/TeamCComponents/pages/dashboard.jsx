@@ -5,7 +5,6 @@ import CardCarousel from "../components/slideshow";
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../css/dashboard_page.css";
 
 function TeamC_Dashboard() {
   return (
