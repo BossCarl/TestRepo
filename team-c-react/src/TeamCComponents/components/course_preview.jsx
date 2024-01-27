@@ -7,9 +7,9 @@ import "../css/slideshow_dashboard.css";
 function CoursePreview () {
 
   return (
-<div className="c_cardpreview_cardouter course-preview-ctn ">
+<div className="course-preview-ctn " id="c_cardpreview_cardouter">
 {/* SQL QUERY */}
-<div className="card-container">
+<div className="card-container" id="c_cardpreview_cardcontainer">
   <div className="card border-success mt-3 mb-3 h-100" style={{ maxWidth: '235px', borderRadius: '10px' }}>
     <div className="card-header bg-transparent border-success"></div>
     <div className="text-success h-100" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -42,7 +42,7 @@ function CoursePreview () {
 </div>
 
 {/* SUBVERSION CONTROL */}
-<div className="card-container">
+<div className="card-container" id="c_cardpreview_cardcontainer">
   <div className="card border-success mt-3 mb-3 h-100" style={{ maxWidth: '235px', borderRadius: '10px' }}>
     <div className="card-header bg-transparent border-success"></div>
     <div className="text-success h-100" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -76,7 +76,7 @@ function CoursePreview () {
 </div>
 
 {/* HTML PROGRAMMING */}
-<div className="card-container">
+<div className="card-container" id="c_cardpreview_cardcontainer">
   <div className="card border-success mt-3 mb-3 h-100" style={{ maxWidth: '235px', borderRadius: '10px' }}>
     <div className="card-header bg-transparent border-success"></div>
     <div className="text-success h-100" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
