@@ -1,11 +1,11 @@
 /* Sidebar styles */
 #c_sidebar_main {
   bottom: 0; /* FOR PULLING THE SIDEBAR DOWNWARDS */
-  padding: 70px 0 0; /* FOR SIDEBAR HEIGHT */
+  padding: 70px; /* FOR SIDEBAR HEIGHT */
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 50%), 0 5px 15px 0 rgb(0 0 0 / 30%); /* FOR SHADOW EFFECT */
   overflow-y: auto; /* OVERFLOW PROPERTY TO WRAP LONG TEXTS */
   position: fixed;
-  z-index: 1; /* Ensure this value is higher than the z-index of mainLayout */
+  z-index: -1; /* Ensure this value is higher than the z-index of mainLayout */
   height: 100%;
   width: 15%; /* Set the width as a percentage */
   background-color: #126912;
@@ -47,11 +47,11 @@
 
 /* mainLayout_styles.css */
 .c_chapcourse_mainlayout {
-  position: relative;
-  z-index: 1;
   margin-left: 20%; /* MOVE CONTENT TO-RIGHT */
   margin-top: 5%; /* MOVE CONTENT TO-BOTTOM */ 
   margin-right: 5%;/* MOVE CONTENT TO-LEFT */
+  z-index: -2;
+  position:fixed;
 }
 
 .c_sidebar_btnReturn{
