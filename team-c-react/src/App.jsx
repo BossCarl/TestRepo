@@ -43,7 +43,7 @@ function App() {
           {/* COURSE 1 */}
           <Route path="/course1_svn/*" element={<><TeamC_Sidebar /><TeamC_CourseSvn1 /></>}
           />
-          <Route path="/course1_hprog/*" element={<><TeamC_Sidebar /><TeamC_CourseHprog1 /></>}
+          <Route path="/course1_hprog/*" element={<><TeamC_CourseHprog1 /><TeamC_Sidebar /></>}
           />
           <Route path="/course1_sql/*" element={<><TeamC_Sidebar /><TeamC_CourseSql1 /></>}
           />

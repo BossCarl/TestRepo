@@ -62,6 +62,7 @@ function TeamC_CourseHprog1(){
                 type="button"
                 style={{backgroundColor: '#D9FFCF',
                 boxShadow: '0 2px 5px 0 rgb(0 0 0 / 25%), 0 5px 5px 0 rgb(0 0 0 / 30%)',
+                color: '#126912',
                 }}
                 >Go to quiz</button>
 
@@ -71,8 +72,8 @@ function TeamC_CourseHprog1(){
                 type="button"
                 style={{backgroundColor: '#0E3B03', 
                 color: 'white',
-                boxShadow: '0 2px 5px 0 rgb(0 0 0 / 25%), 0 5px 5px 0 rgb(0 0 0 / 30%)'
-                }}
+                boxShadow: '0 2px 5px 0 rgb(0 0 0 / 25%), 0 5px 5px 0 rgb(0 0 0 / 30%)', 
+              }}
                 >Download</button>
                </div>
               </div>
